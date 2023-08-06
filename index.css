@@ -1,3 +1,75 @@
+/* settings for desktop */
+@media only screen and (min-width: 860px) {
+  .potrebujete-poradit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: var(--font-size-base);
+    line-height: 140%;
+    color: #2E3E4D;
+    height: 30px;
+  }
+
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* background-color: #f2f2f2; */
+      padding: 10px;
+      margin-right: 550px;
+  }
+
+  
+
+  .logo img {
+      max-height: 80px;
+      padding-left: 40px;
+  }
+
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+  }
+
+  nav li {
+      margin-right: 20px; /* Adjust the spacing between menu items */
+  }
+
+  nav li:last-child {
+      margin-right: 0; /* Remove the right margin from the last menu item */
+  }
+
+  nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 5px 10px;
+  }
+
+  nav a:hover {
+      background-color: #ddd;
+  }
+
+  .dots-background {
+    padding-top: 1000px;
+    width: 1797px;
+    overflow: hidden;
+    font-size: var(--font-size-13xl);
+    color: var(--color-white);
+  }
+}
+
+/* SETTINGS FOR PHONES - TODO: */
+@media only screen and (max-width: 860px) {
+
+}
+
+
+/* BELLOW ARE THE ALREADY DEFINED CSS CLASSES THAT I CAN USE AS */
+
 .footer-child {
   position: absolute;
   top: 53px;
