@@ -7,7 +7,7 @@
     text-align: center;
     font-size: var(--font-size-base);
     line-height: 140%;
-    color: #2E3E4D;
+    color: var(--color-darkslategray-100);
     height: 30px;
   }
 
@@ -46,10 +46,6 @@
     text-decoration: none;
     color: #9A9BA3;
     padding: 5px 10px;
-  }
-
-  nav a:hover {
-    background-color: #ddd;
   }
 
   .dots-background {
@@ -92,11 +88,11 @@
   }
 
   .oval-button:nth-child(1) {
-    background-color: #5F67DC;
+    background-color: var(--color-royalblue);
   }
 
   .oval-button:nth-child(2) {
-    background-color: #C26487;
+    background-color: var(--color-palevioletred);
   }
 }
 
