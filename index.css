@@ -49,18 +49,20 @@
   }
 
   .dots-background {
-    width: 100%;
-    height: 550px;
+    /* width: 100%;
+    height: 550px; */
     background-image: url('./public/landing_page_menu_dots.svg');
     background-repeat: no-repeat;
     background-size: 100% auto;
+    flex: 1;
   }
 
   .oval-button-container {
     display: flex;
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
-    height: calc(100vh - 550px); /* Calculate the remaining space */
+    height: calc(100vh - 150px); /* Calculate the remaining space */
+    margin-top: -200px; /* Adjust this value as needed */
   }
 
   .oval-button {
