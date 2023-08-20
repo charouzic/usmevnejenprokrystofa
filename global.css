@@ -9,6 +9,17 @@
     text-decoration: none; /* Remove underline */
   }
 
+  h2 {
+    --font-jost: Jost, sans-serif;
+    color: #2E3E4D;
+    font-size: 40px;
+  }
+
+  p {
+    --font-jost: Jost, sans-serif;
+    color: #2E3E4D;
+  }
+
   :root {
     /* fonts */
     /* --font-jost: Jost; */
