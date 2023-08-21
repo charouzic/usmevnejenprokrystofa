@@ -106,7 +106,7 @@
   }
 
   .nadacni-fond {
-    background-image: url('./public/vod-foto@2x.png');
+    background-image: url('./public/vod-foto@2x2.png');
     background-size: auto 80%;
     background-position: right center;
     background-repeat: no-repeat;
@@ -133,6 +133,7 @@
     justify-content: center;
     width: 100px;
     height: 100px;
+    padding-left: 40px;
   }
   
   .play-button-link {
@@ -181,8 +182,8 @@
   }
   
   .button-text {
-    margin-left: 10px;
-    font-size: 14px;
+    margin-left: 20px;
+    font-size: 20px;
     color: #2E3E4D;
     white-space: nowrap; /* Prevent text from wrapping to next line */
     font-weight: bold;
