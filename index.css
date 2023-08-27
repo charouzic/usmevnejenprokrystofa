@@ -241,7 +241,66 @@
 
 }
 
+.Text-Konzultace{
+  color: #454868;
+  text-align: center;
+  font-family: Jost;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0%; /* 56px */
 
+}
+
+.blue-text {
+  color: #5F67DC;
+  font-weight: 700;
+}
+
+.contact-info {
+  color: #2E3E4D;
+  font-family: 'Jost', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60%; /* this changes distance between contact info and text above*/
+}
+
+.contact-description{
+  color: #757575;
+  text-align: center;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 21px */
+}
+
+.Konzultace-zdarma {
+  position: relative;
+  padding:4%; /* Adjust as needed */
+  background-image: 
+    linear-gradient(to left, transparent, transparent),
+    url("./public/29-2@2x.png");
+  background-repeat: no-repeat, no-repeat;
+
+  /* Adjust the values below to change the image size and position */
+  background-position: 78% 0%; /* Move the image 20 pixels to the right from the right edge */
+  background-size: 10% auto; /* Adjust the percentage value to make the image smaller */
+}
+
+.Konzultace-zdarma::before {
+  content: ""; /* Required for the pseudo-element to render */
+  position: absolute;
+  /* put it in back; */
+  z-index: -1;
+  top: 12%;
+  /* make it smaller  */
+  left: 25%;
+  width: 11%; /* Adjust the width as needed */
+  height: 55%;
+  border-radius: 0px 0px 100px 0px;
+  background: #FFF2F8;}
 /* BELLOW ARE THE ALREADY DEFINED CSS CLASSES THAT I CAN USE AS */
 
 .footer-child {
