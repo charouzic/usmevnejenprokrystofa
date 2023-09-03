@@ -320,11 +320,21 @@
     margin-top: 500px; /* Adjust the value as needed to move the section down */
   }
 
+  .Rectangle-Container {
+    display: flex;
+    justify-content: space-between; /* Space between rectangles */
+    position: relative; /* Add relative positioning to contain the background rectangle */
+    width: 800px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    margin-bottom: 20px; /* Adjust the margin to control spacing */
+  }
+  
   .Rectangle {
     position: relative;
     width: 308px; /* Set the width of each rectangle */
     height: 350px; /* Increase the height to accommodate the image and text */
     margin: 10px; /* Adjust margin to create space between rectangles */
+    flex-shrink: 0; /* Prevent rectangles from shrinking */
     border-radius: 40px;
     border: 1px solid #F2F2F2;
     background: #FFF;
@@ -338,29 +348,40 @@
   
   /* Style for individual rectangles */
   .Rectangle:nth-child(1) {
-    background-color: #FF5733;
+    background-color: #FFF;
     left: 450px;
-    top: -500px;
+    top: -530px;
   }
   
   .Rectangle:nth-child(2) {
-    background-color: #33FF57;
-    left: 800px; /* Adjust the horizontal position */
-    top: -950px;
+    background-color: #FFF;
+    left: 450px; /* Adjust the horizontal position */
+    top: -600px;
   }
   
   .Rectangle:nth-child(3) {
-    background-color: #5733FF;
-    left: 450px;
-    top: -815px; /* Adjust the vertical position */
+    background-color: #FFF;
+    left: -210px;
+    top: -125px; /* Adjust the vertical position */
   }
   
   .Rectangle:nth-child(4) {
-    background-color: #33FFFF;
-    left: 800px; /* Adjust the horizontal position */
-    top: -1260px; /* Adjust the vertical position */
+    background-color: #FFF;
+    left: -210px; /* Adjust the horizontal position */
+    top: -200px; /* Adjust the vertical position */
   }
-  
+
+    /* Style for the background rectangle */
+  .Rectangle:nth-child(5) {
+      flex-shrink: 0;
+      width: 1047px;
+      height: 619px;
+      border-radius: 150px 0px 0px 0px; /* Rounded top left corner */
+      background-color: #F4F9FF;
+      left: -1050px; /* Adjust the horizontal position */
+      top: -475px;
+      z-index: -1; /* Set the z-index to send the rectangle to the back */
+  }
   /* Style for images inside rectangles */
   .Rectangle img {
     max-width: 100%;
@@ -380,6 +401,7 @@
     font-weight: 400;
     line-height: normal;    margin: 10px; /* Adjust the margin to separate text from the image */
   }
+
 }
 
 /* SETTINGS FOR PHONES - TODO: */
