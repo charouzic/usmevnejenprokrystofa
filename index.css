@@ -316,6 +316,70 @@
     /* Adjust this value if needed */
   }
 
+  .Nejste-na-to-sami {
+    margin-top: 500px; /* Adjust the value as needed to move the section down */
+  }
+
+  .Rectangle {
+    position: relative;
+    width: 308px; /* Set the width of each rectangle */
+    height: 350px; /* Increase the height to accommodate the image and text */
+    margin: 10px; /* Adjust margin to create space between rectangles */
+    border-radius: 40px;
+    border: 1px solid #F2F2F2;
+    background: #FFF;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    text-align: center; /* Center-align text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for individual rectangles */
+  .Rectangle:nth-child(1) {
+    background-color: #FF5733;
+    left: 450px;
+    top: -500px;
+  }
+  
+  .Rectangle:nth-child(2) {
+    background-color: #33FF57;
+    left: 800px; /* Adjust the horizontal position */
+    top: -950px;
+  }
+  
+  .Rectangle:nth-child(3) {
+    background-color: #5733FF;
+    left: 450px;
+    top: -815px; /* Adjust the vertical position */
+  }
+  
+  .Rectangle:nth-child(4) {
+    background-color: #33FFFF;
+    left: 800px; /* Adjust the horizontal position */
+    top: -1260px; /* Adjust the vertical position */
+  }
+  
+  /* Style for images inside rectangles */
+  .Rectangle img {
+    max-width: 100%;
+    max-height: 50%; /* Adjust the max-height for smaller images */
+    display: block;
+    margin: 0 auto; /* Center-align the image horizontally */
+  }
+  
+  /* Style for text inside rectangles */
+  .Rectangle p {
+    width: 231px;
+    color: #000;
+    text-align: center;
+    font-family: Jost;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    margin: 10px; /* Adjust the margin to separate text from the image */
+  }
 }
 
 /* SETTINGS FOR PHONES - TODO: */
