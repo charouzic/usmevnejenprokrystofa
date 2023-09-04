@@ -66,7 +66,7 @@
           <p>Kdykoliv se na nás můžete obrátit osobně nebo telefonicky.</p>
           <div class="video-and-schuzka">
             <div class="play-button-container">
-              <a href="#" class="play-button-link">
+              <a href="#video-section" class="play-button-link" onclick="playVideo()">
                 <button class="play-button">
                   <div class="circle"></div>
                   <div class="triangle"></div>
@@ -146,7 +146,7 @@
             </div>
         </div>
       </section>
-      <section class="Taky-jsme-si-tim-prosli">
+      <section class="Taky-jsme-si-tim-prosli" id="video-section">
         <div class="Taky-jsme-si-tim-prosli-left">
           <h2>
             Taky jsme si tím prošli. <br>Pusťte si příběh našeho syna
@@ -156,7 +156,7 @@
             <br>Děkujeme Tomášovi Klusovi za propůjčení jeho hlasu a citlivý přístup.
           </p>
           <div class="prehrat-video">
-            <a href="#" class="prehrat-video-button">
+            <a href="#video-section" class="prehrat-video-button" onclick="playVideo()">
               <span>Přehrát video</span>
             </a>
           </div>
@@ -167,9 +167,10 @@
         <script src="https://www.youtube.com/iframe_api"></script>
         <script>
             var videoID = "PG_1MlYM5po";
+            var player; // Declare a variable to store the YouTube player object
 
             function onYouTubeIframeAPIReady() {
-                new YT.Player('video-container', {
+                player = new YT.Player('video-container', {
                     videoId: videoID,
                     width: 560,
                     height: 315,
@@ -184,8 +185,9 @@
             }
 
             function playVideo() {
-                var videoContainer = document.getElementById("video-container");
-                videoContainer.style.display = "block";
+                if (player) {
+                    player.playVideo();
+                }
             }
         </script>
       </section>
