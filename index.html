@@ -146,6 +146,49 @@
             </div>
         </div>
       </section>
+      <section class="Taky-jsme-si-tim-prosli">
+        <div class="Taky-jsme-si-tim-prosli-left">
+          <h2>
+            Taky jsme si tím prošli. <br>Pusťte si příběh našeho syna
+          </h2>
+          <p>
+            Děkujeme nadačnímu fondu Lidé lidem za zprostředkování a tvorbu videa. 
+            <br>Děkujeme Tomášovi Klusovi za propůjčení jeho hlasu a citlivý přístup.
+          </p>
+          <div class="prehrat-video">
+            <a href="#" class="prehrat-video-button">
+              <span>Přehrát video</span>
+            </a>
+          </div>
+        </div>
+        
+        <div id="video-container"></div>
+
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            var videoID = "PG_1MlYM5po";
+
+            function onYouTubeIframeAPIReady() {
+                new YT.Player('video-container', {
+                    videoId: videoID,
+                    width: 560,
+                    height: 315,
+                    playerVars: {
+                        autoplay: 0, // You can set this to 1 for autoplay
+                        controls: 1,
+                        modestbranding: 1,
+                        rel: 0,
+                        showinfo: 0
+                    }
+                });
+            }
+
+            function playVideo() {
+                var videoContainer = document.getElementById("video-container");
+                videoContainer.style.display = "block";
+            }
+        </script>
+      </section>
     </div>
   </body>
 </html>

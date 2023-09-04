@@ -402,6 +402,34 @@
     line-height: normal;    margin: 10px; /* Adjust the margin to separate text from the image */
   }
 
+  .Taky-jsme-si-tim-prosli {
+    display: flex;
+    justify-content: space-between; /* Space between the two content areas */
+    align-items: flex-start; /* Align content at the top */
+  }
+
+  .Taky-jsme-si-tim-prosli-left {
+    flex: 1; /* Allow the left content to grow and fill the space */
+    padding-right: 20px; /* Add some spacing between the left and right content */
+  }
+
+  .prehrat-video {
+      padding-top: 20px;
+  }
+
+  .prehrat-video-button {
+      padding: 8px 30px;
+      background-color: var(--color-royalblue);
+      color: white;
+      text-decoration: none;
+      border-radius: 40px;
+      transition: background-color 0.3s ease;
+  }
+
+  .video-container {
+    width: 600px; /* Set the width of the video container */
+  }
+
 }
 
 /* SETTINGS FOR PHONES - TODO: */
