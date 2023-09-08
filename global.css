@@ -15,6 +15,12 @@
     font-size: 40px;
   }
 
+  h3 {
+    --font-jost: Jost, sans-serif;
+    color: #2E3E4D;
+    font-size: 30px;
+  }
+
   p {
     --font-jost: Jost, sans-serif;
     color: #2E3E4D;
