@@ -635,7 +635,34 @@
     background-color: var(--color-palevioletred); /* Change the background color on hover */
     color: white; /* Change text color on hover */
   }
+
+  .O-Nás-box {
+    display: flex;
+    align-items: center;
+  }
   
+  .O-Nas-img img {
+    max-width: 500px;
+    height: auto;
+    align-self: left;
+    padding-left: 200px;
+  }
+
+  .Nas-pribeh-button{
+    padding: 8px 30px;
+    background-color: var(--color-royalblue);
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+  }
+
+  .O-Nas-Podpis-img img {
+    max-width: 400px;
+    height: auto;
+    align-self: left;
+    padding-left: 250px;
+  }
 }
 /* SETTINGS FOR PHONES - TODO: */
 /* SETTINGS FOR PHONES - TODO: */
