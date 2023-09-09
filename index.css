@@ -639,6 +639,7 @@
   .O-Nás-box {
     display: flex;
     align-items: center;
+    padding-bottom: 200px;
   }
   
   .O-Nas-img img {
@@ -661,6 +662,65 @@
     text-decoration: none;
     border-radius: 40px;
     transition: background-color 0.3s ease;
+  }
+
+  /* Center the Nejcastejsi-dotazy-box both horizontally and vertically */
+  .Nejcastejsi-dotazy-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    background-color: #F4F9FF;
+    border-radius: 0px 0px 150px 0px;
+    overflow: hidden;
+    padding-top: 100px;
+  }
+
+  .text{
+    color: rgba(46, 62, 77, 0.80);
+    flex-shrink: 0;
+    margin-right: 30px;
+    font-family: Jost;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 33.6px */
+  }
+  /* Center the text within its container */
+  .Nejcastejsi-dotazy-header-text {
+    text-align: center;
+  }
+
+  /* Display the image to the right of the text */
+  .Nejcastejsi-dotazy-stripes-with-text {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Ensure the image doesn't exceed its container width */
+  .Nejcastejsi-dotazy-img img {
+    margin-top: -50px;
+    width: 130px;
+    height: auto;
+  }
+
+  /* Center the Nejcastejsi-div */
+  .Nejcastejsi-div {
+    border-radius: 48px;
+    background: #FFF;
+    box-shadow: 0px 10px 50px 0px rgba(95, 103, 220, 0.10);
+    display: flex;
+    align-self: center;
+    padding: 16px;
+    margin-top: 20px; /* Add margin-top for spacing */
+  }
+
+  .h_line {
+    width: 1042px;
+    height: 1px;
+    background-color: #E1E1E1;
   }
 
 }
