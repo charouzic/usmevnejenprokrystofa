@@ -673,7 +673,9 @@
     background-color: #F4F9FF;
     border-radius: 0px 0px 150px 0px;
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    flex-shrink: 0;
   }
 
   .text{
@@ -706,21 +708,53 @@
     height: auto;
   }
 
-  /* Center the Nejcastejsi-div */
-  .Nejcastejsi-div {
-    border-radius: 48px;
-    background: #FFF;
-    box-shadow: 0px 10px 50px 0px rgba(95, 103, 220, 0.10);
-    display: flex;
-    align-self: center;
-    padding: 16px;
-    margin-top: 20px; /* Add margin-top for spacing */
-  }
-
   .h_line {
     width: 1042px;
     height: 1px;
     background-color: #E1E1E1;
+  }
+  
+  .Folded-text {
+    display: none;
+  }
+  
+/* Align items vertically within the flex container */
+.folded-text-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+/* Make the circle smaller */
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Decrease the font size to make it smaller */
+  color: #5F67DC;
+  width: 20px; /* Decrease the width and height to make it smaller */
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  border: 2px solid #5F67DC;
+  transition: border-color 0.3s;
+}
+ 
+  .inline-text-Nejcastejsi {
+    color: rgba(46, 62, 77, 0.80);
+    font-family: Jost;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 33.6px */
+  }
+  .Folded-Nejcastejsi-dotazy{
+    border-radius: 48px;
+    background: #FFF;
+    box-shadow: 0px 10px 50px 0px rgba(95, 103, 220, 0.10);
+    padding: 40px;
   }
 
 }

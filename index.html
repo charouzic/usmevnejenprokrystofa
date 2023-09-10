@@ -1,352 +1,401 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
-    />
-  </head>
 
-  <body>
-    <div class="potrebujete-poradit-container">
-      <span
-        >Potřebujete poradit nebo vyslechnout? Jsme tu pro vás denně 9:00 -
-        18:00. <strong>+420 739 360 498</strong></span
-      >
-    </div>
-    <div>
-      <section class="dots-background">
-        <header class="full-page">
-          <div class="logo">
-            <img src="./public/logo-transparent@2x.png" />
-          </div>
-          <nav>
-            <ul>
-              <li><a href="/">ÚVOD</a></li>
-              <li><a href="/pacienti">PRO PACIENTY</a></li>
-              <li><a href="/darci">PRO DÁRCE</a></li>
-              <li><a href="/onas">O NÁS</a></li>
-              <li><a href="/kontakt">KONTAKT</a></li>
-            </ul>
-          </nav>
-        </header>
-        <div class="oval-button-container">
-          <a href="#" class="oval-button">
-            <img src="./public/28-1@2x.png" alt="Button 1" />
-            <span>Potřebuji pomoc</span>
-          </a>
-          <a href="#" class="oval-button">
-            <img src="./public/27-1@2x.png" alt="Button 2" />
-            <span>Chci darovat</span>
-          </a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" />
+</head>
+
+<body>
+  <div class="potrebujete-poradit-container">
+    <span>Potřebujete poradit nebo vyslechnout? Jsme tu pro vás denně 9:00 -
+      18:00. <strong>+420 739 360 498</strong></span>
+  </div>
+  <div>
+    <section class="dots-background">
+      <header class="full-page">
+        <div class="logo">
+          <img src="./public/logo-transparent@2x.png" />
         </div>
-      </section>
-    </div>
-    <div class="full-page">
-      <section class="nadacni-fond">
-        <div class="nadacni-content">
-          <div class="nadacni-header">
-            <h2>
-              Nadační fond věnovaný všem, jejichž úsměv <br />
-              zmizel v důsledku onkologického onemocnění.
-            </h2>
-          </div>
-          <p>
-            Naše stránky Vám pomohou zorientovat se v nelehké situaci způsobené
-            onkologickým onemocněním. Naleznete zde odpovědi na mnoho
-            přirozených otázek, informace o nemoci a jejím průběhu, včetně
-            praktických rad, jak s nemocí žít. Zaměřujeme se na předání
-            zkušeností, doporučení a kontaktů pro zajištění kvality života a
-            chodu rodiny v průběhu léčby.
-          </p>
-          <p>Kdykoliv se na nás můžete obrátit osobně nebo telefonicky.</p>
-          <div class="video-and-schuzka">
-            <div class="play-button-container">
-              <a href="#video" class="play-button-link" onclick="playVideo()">
-                <button class="play-button">
-                  <div class="circle"></div>
-                  <div class="triangle"></div>
-                </button>
-                <span class="button-text">Video: Náš příběh</span>
-              </a>
-            </div>
-            <div class="schuzka-box-content">
-              <p>Pomohli jsme již více než 300 klientům</p>
-              <a href="#" class="schuzka-button">
-                <img src="./public/calendar-1@2x.png" alt="Button 3" />
-                <span>Sjednat schůzku</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="Konzultace-zdarma">
-        <div class="Text-Konzultace">
-          <p class ="Konzultace-img">
-            Konzultace <span class="blue-text">zdarma</span> každý den 9:00 - 18:00
-            <img src="./public/29-2@2x.png" alt="3 red stripes ">
-          </p>         
-          <p class="contact-info">
-            +420 739 360 498
-          </p>
-          <p class = "contact-description">
-            V případě, že se nám nedovoláte, zavoláme vám zpět hned, jak to bude možné.
-          </p>
-        </div>
-      </section>
-      <section class="Nejste-na-to-sami">
-        <div class="Text-Nejste-na-to-sami">
+        <nav>
+          <ul>
+            <li><a href="/">ÚVOD</a></li>
+            <li><a href="/pacienti">PRO PACIENTY</a></li>
+            <li><a href="/darci">PRO DÁRCE</a></li>
+            <li><a href="/onas">O NÁS</a></li>
+            <li><a href="/kontakt">KONTAKT</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="oval-button-container">
+        <a href="#" class="oval-button">
+          <img src="./public/28-1@2x.png" alt="Button 1" />
+          <span>Potřebuji pomoc</span>
+        </a>
+        <a href="#" class="oval-button">
+          <img src="./public/27-1@2x.png" alt="Button 2" />
+          <span>Chci darovat</span>
+        </a>
+      </div>
+    </section>
+  </div>
+  <div class="full-page">
+    <section class="nadacni-fond">
+      <div class="nadacni-content">
+        <div class="nadacni-header">
           <h2>
-            Nejste na to sami
+            Nadační fond věnovaný všem, jejichž úsměv <br />
+            zmizel v důsledku onkologického onemocnění.
           </h2>
-          <p class="Sluzby-text">
-            Nabízíme kvalitní informace a otevřené srdce. <br>
-            Nabízíme prostor k hovoru i společnému mlčení. <br>
-            Budeme trpělivě naslouchat. <br>
-            Poskytneme svůj čas. <br>
-            Pomůžeme utřídit si myšlenky a potřeby.
-          </p>
-          <div class="Rectangle-Container">
-            <div class="Rectangle">
-              <img src="./public/18-2@2x.png" alt="Image 1">
-              <p>
-                Pomůžeme s <br>
-                orientací v situaci
-              </p>
-            </div>
-            <div class="Rectangle">
-              <img src="./public/figma-web-7@2x.png" alt="Image 2">
-              <p>Spojíme vás <br>
-                s relevantními <br>
-                odborníky
-              </p>
-            </div>
-            <div class="Rectangle">
-              <img src="./public/16-2@2x.png" alt="Image 3">
-              <p>
-                Veškeré služby<br>
-                poskytujeme zdarma
-              </p>
-            </div>
-            <div class="Rectangle">
-              <img src="./public/navrh-bez-nazvu-3@2x.png" alt="Image 4">
-              <p>
-                Sami jsme si tím<br>
-                prošli
-              </p>
-            </div>
-            <div class="Rectangle">
-              <p>
-                .
-              </p>
-            </div>
         </div>
-      </section>
-      <section class="Taky-jsme-si-tim-prosli" id="video">
-        <div class="Taky-jsme-si-tim-prosli-left">
-          <h2>
-            Taky jsme si tím prošli. <br>Pusťte si příběh našeho syna
-          </h2>
-          <p>
-            Děkujeme nadačnímu fondu Lidé lidem za zprostředkování a tvorbu videa. 
-            <br>Děkujeme Tomášovi Klusovi za propůjčení jeho hlasu a citlivý přístup.
-          </p>
-          <div class="prehrat-video">
-            <a href="#video" class="prehrat-video-button" onclick="playVideo()">
-              <span>Přehrát video</span>
+        <p>
+          Naše stránky Vám pomohou zorientovat se v nelehké situaci způsobené
+          onkologickým onemocněním. Naleznete zde odpovědi na mnoho
+          přirozených otázek, informace o nemoci a jejím průběhu, včetně
+          praktických rad, jak s nemocí žít. Zaměřujeme se na předání
+          zkušeností, doporučení a kontaktů pro zajištění kvality života a
+          chodu rodiny v průběhu léčby.
+        </p>
+        <p>Kdykoliv se na nás můžete obrátit osobně nebo telefonicky.</p>
+        <div class="video-and-schuzka">
+          <div class="play-button-container">
+            <a href="#video" class="play-button-link" onclick="playVideo()">
+              <button class="play-button">
+                <div class="circle"></div>
+                <div class="triangle"></div>
+              </button>
+              <span class="button-text">Video: Náš příběh</span>
+            </a>
+          </div>
+          <div class="schuzka-box-content">
+            <p>Pomohli jsme již více než 300 klientům</p>
+            <a href="#" class="schuzka-button">
+              <img src="./public/calendar-1@2x.png" alt="Button 3" />
+              <span>Sjednat schůzku</span>
             </a>
           </div>
         </div>
-        
-        <div id="video-container"></div>
-
-        <script src="https://www.youtube.com/iframe_api"></script>
-        <script>
-            var videoID = "PG_1MlYM5po";
-            var player; // Declare a variable to store the YouTube player object
-
-            function onYouTubeIframeAPIReady() {
-                player = new YT.Player('video-container', {
-                    videoId: videoID,
-                    width: 560,
-                    height: 315,
-                    playerVars: {
-                        autoplay: 0, // You can set this to 1 for autoplay
-                        controls: 1,
-                        modestbranding: 1,
-                        rel: 0,
-                        showinfo: 0
-                    }
-                });
-            }
-
-            function playVideo() {
-                if (player) {
-                    player.playVideo();
-                }
-            }
-        </script>
-      </section>
-      <section class="vyberte-co-vas-zajima">
-        <div class="vyberte-co-vas-zajima-header">
-          <h2>
-            Vyberte, co vás zajímá
-          </h2>
-          <p>
-            Zde najdete rozcestník veškerých důležitých informací, které koncentrujeme u nás na webu. <br>
-            Nenašli jste, co jste potřebovali? <span style="color: var(--color-royalblue);">Kontaktujte nás.</span>
-          </p>
-        </div>
-        <div class="co-me-tizi-box">
-          <div class="co-me-tizi">
-            <div class="co-me-tizi-text">
-              <h3>Co mě tíží?</h3>
-              <p>Ať už jste pacient nebo jeho blízký, na vaší cestě se budete setkávat s <br> 
-                  mnoha informacemi, kterým nemusíte vždy plně rozumět. S lepším <br>
-                  porozuměním vám mohou pomoci texty a odkazy níže. </p>
-              <a href="#" class="vic-informaci-button">
-                <span>Více informací</span>
-              </a>
-            </div>
-            <div class="co-me-tizi-img">
-              <img alt="" src="./public/19@2x.png" />
-            </div>
-          </div>
-          <div class="co-me-tizi-buttons">
-            <a href="#" class="co-me-tizi-button">
-                <span>Slovník důležitých pojmů</span>
-            </a>
-            <a href="#" class="co-me-tizi-button">
-                <span>Druhy nádorů a jejich popis</span>
-            </a>
-            <a href="#" class="co-me-tizi-button">
-                <span>Léčba a její stádia</span>
-            </a>
-            <a href="#" class="co-me-tizi-button">
-                <span>Práva a možnosti pacientů</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="co-me-ceka-box">
-          <div class="co-me-ceka">
-            <div class="co-me-ceka-text">
-              <h3>Co mě čeká?</h3>
-              <p>Otázky, na které budete hledat odpovědi, nemusí být jen ze zdravotní <br> 
-                oblasti, ale například z oblasti sociální, ekonomické nebo jiné.</p>
-              <a href="#" class="co-me-ceka-vic-informaci-button">
-                <span>Více informací</span>
-              </a>
-            </div>
-            <div class="co-me-ceka-img">
-              <img alt="" src="./public/20@2x.png" />
-            </div>
-          </div>
-          <div class="co-me-ceka-buttons">
-            <a href="#" class="co-me-ceka-button">
-                <span>Komunikace situace</span>
-            </a>
-            <a href="#" class="co-me-ceka-button">
-                <span>Léčby, kontroly, odběry</span>
-            </a>
-            <a href="#" class="co-me-ceka-button">
-                <span>Sociální podpora nemocných</span>
-            </a>
-            <a href="#" class="co-me-ceka-button">
-                <span>Diagnóza, léčba, následky</span>
-            </a>
-          </div>
-
-        </div>
-
-        <div class="jak-zit-dal-box">
-          <div class="jak-zit-dal">
-            <div class="jak-zit-dal-text">
-              <h3>Jak dál žít</h3>
-              <p>Úroveň psychické pohody pacienta i okolí se odráží na zdravotním stavu <br> 
-                nemocného. Pro zachování zdravého rozumu je důležité dodržovat <br>
-                psychickou i fyzickou hygienu.</p>
-              <a href="#" class="jak-zit-dal-vic-informaci-button">
-                <span>Více informací</span>
-              </a>
-            </div>
-            <div class="jak-zit-dal-img">
-              <img alt="" src="./public/23-1@2x.png" />
-            </div>
-          </div>
-          <div class="jak-zit-dal-buttons">
-            <a href="#" class="jak-zit-dal-button">
-                <span>Nejste na to sami</span>
-            </a>
-            <a href="#" class="jak-zit-dal-button">
-                <span>Udržujte své mentální zdraví</span>
-            </a>
-            <a href="#" class="jak-zit-dal-button">
-                <span>Péče o tělo</span>
-            </a>
-            <a href="#" class="jak-zit-dal-button">
-                <span>Nemocí život nekončí</span>
-            </a>
-          </div>
-
-        </div>
-      </section>
-      <section class="O-Nás-box">
-        <div class="O-Nas-img">
-          <img alt="" src="./public/4@2x.png" />
-        </div>
-        <div class="Text-O-Nás">
-          <h2>
-            O Nás
-          </h2>
-          <p class="Sluzby-text">
-            Nadační fond založili manželé Abelovi na základě vlastní trpké zkušenosti s <br>
-            osteosarkomem u jejich syna Kryštofa. Při boji o záchranu synova života sami<br>
-            zjistili, jak nekoordinovaná je nelékařská pomoc – od psychické až po <br>
-            ekonomickou.<br><br>
-            Jsme tu pro to, abychom se pokusili provést vás touto nelehkou cestou a <br>
-            podělili se s vámi o naše obsáhlé zkušenosti.<br><br>
-          </p>
-          <div class="Nas-pribeh-box">
-            <a href="" class="Nas-pribeh-button" onclick="">
-              <span>Náš příběh</span>
-            </a>
-          </div>
-          <div class="O-Nas-Podpis-img">
-            <img alt="" src="./public/marie-a-tibor-abelovi-1@2x.png" />
-          </div>
-        </div>
-      </section>
-      <section class= "Nejcastejsi-dotazy-box">
-        <div class ="Nejcastejsi-dotazy-stripes-with-text">
-          <div class="Nejcastejsi-dotazy-img">
-            <img src="./public/29-4@2x.png" alt="3 red stripes ">
-          </div>
-          <div class="Nejcastejsi-dotazy-header-text">
-            <h2>
-              Nejčastější dotazy
-            </h2>
+      </div>
+    </section>
+    <section class="Konzultace-zdarma">
+      <div class="Text-Konzultace">
+        <p class="Konzultace-img">
+          Konzultace <span class="blue-text">zdarma</span> každý den 9:00 - 18:00
+          <img src="./public/29-2@2x.png" alt="3 red stripes ">
+        </p>
+        <p class="contact-info">
+          +420 739 360 498
+        </p>
+        <p class="contact-description">
+          V případě, že se nám nedovoláte, zavoláme vám zpět hned, jak to bude možné.
+        </p>
+      </div>
+    </section>
+    <section class="Nejste-na-to-sami">
+      <div class="Text-Nejste-na-to-sami">
+        <h2>
+          Nejste na to sami
+        </h2>
+        <p class="Sluzby-text">
+          Nabízíme kvalitní informace a otevřené srdce. <br>
+          Nabízíme prostor k hovoru i společnému mlčení. <br>
+          Budeme trpělivě naslouchat. <br>
+          Poskytneme svůj čas. <br>
+          Pomůžeme utřídit si myšlenky a potřeby.
+        </p>
+        <div class="Rectangle-Container">
+          <div class="Rectangle">
+            <img src="./public/18-2@2x.png" alt="Image 1">
             <p>
-              Máte dotaz? <span style="color: #5F67DC;">Pomůžeme vám.</span>
+              Pomůžeme s <br>
+              orientací v situaci
+            </p>
+          </div>
+          <div class="Rectangle">
+            <img src="./public/figma-web-7@2x.png" alt="Image 2">
+            <p>Spojíme vás <br>
+              s relevantními <br>
+              odborníky
+            </p>
+          </div>
+          <div class="Rectangle">
+            <img src="./public/16-2@2x.png" alt="Image 3">
+            <p>
+              Veškeré služby<br>
+              poskytujeme zdarma
+            </p>
+          </div>
+          <div class="Rectangle">
+            <img src="./public/navrh-bez-nazvu-3@2x.png" alt="Image 4">
+            <p>
+              Sami jsme si tím<br>
+              prošli
+            </p>
+          </div>
+          <div class="Rectangle">
+            <p>
+              .
             </p>
           </div>
         </div>
-        <div class="Nejcastejsi-div">
-          <div class="text-wrapper">
-            <div class="text">Jak zajistit žádanku na sanitku - kdo ji vypíše?</div>
-            <div class="h_line"></div>
-            <div class="text">Co znamená druhý názor?</div>
-            <div class="h_line"></div>
-            <div class="text">Jak získat správné informace o pracovištích, kde se rakovina léčí?</div>
+    </section>
+    <section class="Taky-jsme-si-tim-prosli" id="video">
+      <div class="Taky-jsme-si-tim-prosli-left">
+        <h2>
+          Taky jsme si tím prošli. <br>Pusťte si příběh našeho syna
+        </h2>
+        <p>
+          Děkujeme nadačnímu fondu Lidé lidem za zprostředkování a tvorbu videa.
+          <br>Děkujeme Tomášovi Klusovi za propůjčení jeho hlasu a citlivý přístup.
+        </p>
+        <div class="prehrat-video">
+          <a href="#video" class="prehrat-video-button" onclick="playVideo()">
+            <span>Přehrát video</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="video-container"></div>
+
+      <script src="https://www.youtube.com/iframe_api"></script>
+      <script>
+        var videoID = "PG_1MlYM5po";
+        var player; // Declare a variable to store the YouTube player object
+
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('video-container', {
+            videoId: videoID,
+            width: 560,
+            height: 315,
+            playerVars: {
+              autoplay: 0, // You can set this to 1 for autoplay
+              controls: 1,
+              modestbranding: 1,
+              rel: 0,
+              showinfo: 0
+            }
+          });
+        }
+
+        function playVideo() {
+          if (player) {
+            player.playVideo();
+          }
+        }
+      </script>
+    </section>
+    <section class="vyberte-co-vas-zajima">
+      <div class="vyberte-co-vas-zajima-header">
+        <h2>
+          Vyberte, co vás zajímá
+        </h2>
+        <p>
+          Zde najdete rozcestník veškerých důležitých informací, které koncentrujeme u nás na webu. <br>
+          Nenašli jste, co jste potřebovali? <span style="color: var(--color-royalblue);">Kontaktujte nás.</span>
+        </p>
+      </div>
+      <div class="co-me-tizi-box">
+        <div class="co-me-tizi">
+          <div class="co-me-tizi-text">
+            <h3>Co mě tíží?</h3>
+            <p>Ať už jste pacient nebo jeho blízký, na vaší cestě se budete setkávat s <br>
+              mnoha informacemi, kterým nemusíte vždy plně rozumět. S lepším <br>
+              porozuměním vám mohou pomoci texty a odkazy níže. </p>
+            <a href="#" class="vic-informaci-button">
+              <span>Více informací</span>
+            </a>
+          </div>
+          <div class="co-me-tizi-img">
+            <img alt="" src="./public/19@2x.png" />
           </div>
         </div>
-      </section>
-    </div>
-  </body>
+        <div class="co-me-tizi-buttons">
+          <a href="#" class="co-me-tizi-button">
+            <span>Slovník důležitých pojmů</span>
+          </a>
+          <a href="#" class="co-me-tizi-button">
+            <span>Druhy nádorů a jejich popis</span>
+          </a>
+          <a href="#" class="co-me-tizi-button">
+            <span>Léčba a její stádia</span>
+          </a>
+          <a href="#" class="co-me-tizi-button">
+            <span>Práva a možnosti pacientů</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="co-me-ceka-box">
+        <div class="co-me-ceka">
+          <div class="co-me-ceka-text">
+            <h3>Co mě čeká?</h3>
+            <p>Otázky, na které budete hledat odpovědi, nemusí být jen ze zdravotní <br>
+              oblasti, ale například z oblasti sociální, ekonomické nebo jiné.</p>
+            <a href="#" class="co-me-ceka-vic-informaci-button">
+              <span>Více informací</span>
+            </a>
+          </div>
+          <div class="co-me-ceka-img">
+            <img alt="" src="./public/20@2x.png" />
+          </div>
+        </div>
+        <div class="co-me-ceka-buttons">
+          <a href="#" class="co-me-ceka-button">
+            <span>Komunikace situace</span>
+          </a>
+          <a href="#" class="co-me-ceka-button">
+            <span>Léčby, kontroly, odběry</span>
+          </a>
+          <a href="#" class="co-me-ceka-button">
+            <span>Sociální podpora nemocných</span>
+          </a>
+          <a href="#" class="co-me-ceka-button">
+            <span>Diagnóza, léčba, následky</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="jak-zit-dal-box">
+        <div class="jak-zit-dal">
+          <div class="jak-zit-dal-text">
+            <h3>Jak dál žít</h3>
+            <p>Úroveň psychické pohody pacienta i okolí se odráží na zdravotním stavu <br>
+              nemocného. Pro zachování zdravého rozumu je důležité dodržovat <br>
+              psychickou i fyzickou hygienu.</p>
+            <a href="#" class="jak-zit-dal-vic-informaci-button">
+              <span>Více informací</span>
+            </a>
+          </div>
+          <div class="jak-zit-dal-img">
+            <img alt="" src="./public/23-1@2x.png" />
+          </div>
+        </div>
+        <div class="jak-zit-dal-buttons">
+          <a href="#" class="jak-zit-dal-button">
+            <span>Nejste na to sami</span>
+          </a>
+          <a href="#" class="jak-zit-dal-button">
+            <span>Udržujte své mentální zdraví</span>
+          </a>
+          <a href="#" class="jak-zit-dal-button">
+            <span>Péče o tělo</span>
+          </a>
+          <a href="#" class="jak-zit-dal-button">
+            <span>Nemocí život nekončí</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <section class="O-Nás-box">
+      <div class="O-Nas-img">
+        <img alt="" src="./public/4@2x.png" />
+      </div>
+      <div class="Text-O-Nás">
+        <h2>
+          O Nás
+        </h2>
+        <p class="Sluzby-text">
+          Nadační fond založili manželé Abelovi na základě vlastní trpké zkušenosti s <br>
+          osteosarkomem u jejich syna Kryštofa. Při boji o záchranu synova života sami<br>
+          zjistili, jak nekoordinovaná je nelékařská pomoc – od psychické až po <br>
+          ekonomickou.<br><br>
+          Jsme tu pro to, abychom se pokusili provést vás touto nelehkou cestou a <br>
+          podělili se s vámi o naše obsáhlé zkušenosti.<br><br>
+        </p>
+        <div class="Nas-pribeh-box">
+          <a href="" class="Nas-pribeh-button" onclick="">
+            <span>Náš příběh</span>
+          </a>
+        </div>
+        <div class="O-Nas-Podpis-img">
+          <img alt="" src="./public/marie-a-tibor-abelovi-1@2x.png" />
+        </div>
+      </div>
+    </section>
+    <section class="Nejcastejsi-dotazy-box">
+      <div class="Nejcastejsi-dotazy-stripes-with-text">
+        <div class="Nejcastejsi-dotazy-img">
+          <img src="./public/29-4@2x.png" alt="3 red stripes">
+        </div>
+        <div class="Nejcastejsi-dotazy-header-text">
+          <h2>
+            Nejčastější dotazy
+          </h2>
+          <p>
+            Máte dotaz? <span style="color: #5F67DC;">Pomůžeme vám.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="Folded-Nejcastejsi-dotazy">
+        <!-- First expandable element -->
+        <div class="folded-text-container">
+          <p class="inline-text-Nejcastejsi">Jak zajistit žádanku na sanitku - kdo ji vypíše?</p>
+          <button class="toggle-button">+</button>
+        </div>
+        <div class="Folded-text">
+          <p>
+            Zdravotní přeprava nemocného je hrazena zdravotní službou výhradně v případě, že zdravotní stav pojištěnce
+            neumožňuje<br>
+            přepravu běžným způsobem bez použití zdravotnické dopravní služby (sanitky). Odůvodnění pro přepravu musí
+            být tedy<br>
+            konkrétně popsána.
+          </p>
+        </div>
+
+        <div class="h_line"></div>
+
+        <!-- Second expandable element -->
+        <div class="folded-text-container">
+          <p class="inline-text-Nejcastejsi">Co znamená druhý názor?</p>
+          <button class="toggle-button">+</button>
+        </div>
+        <div class="Folded-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.
+          </p>
+        </div>
+
+        <div class="h_line"></div>
+
+        <!-- Third expandable element -->
+        <div class="folded-text-container">
+          <p class="inline-text-Nejcastejsi">Jak získat správné informace o pracovištích, kde se rakovina léčí?</p>
+          <button class="toggle-button">+</button>
+        </div>
+        <div class="Folded-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.
+          </p>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const toggleButtons = document.querySelectorAll(".toggle-button");
+          const foldedTexts = document.querySelectorAll(".Folded-text");
+
+          toggleButtons.forEach((toggleButton, index) => {
+            toggleButton.addEventListener("click", function () {
+              if (foldedTexts[index].style.display === "none" || foldedTexts[index].style.display === "") {
+                foldedTexts[index].style.display = "block";
+                toggleButton.textContent = "-";
+              } else {
+                foldedTexts[index].style.display = "none";
+                toggleButton.textContent = "+";
+              }
+            });
+          });
+        });
+      </script>
+    </section>
+  </div>
+</body>
+
 </html>
 <!-- <div class="dots-background">
       <div class="frame-child"></div>
