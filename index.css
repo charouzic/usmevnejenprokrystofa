@@ -757,6 +757,20 @@
     padding: 40px;
   }
 
+  .Zobrazit-vice-button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally within the container */
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  .Zobrazit-vice-button {
+    display: inline-block;
+    padding: 10px 30px;
+    color: var(--color-royalblue);
+    text-decoration: none;
+    border-radius: 40px;
+    border: 2px solid var(--color-royalblue);
+  }
 }
 /* SETTINGS FOR PHONES - TODO: */
 /* SETTINGS FOR PHONES - TODO: */
