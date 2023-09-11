@@ -414,16 +414,23 @@
       <div class="prispevkovy-formular-container">
         <div class="prispevkovy-formular-container-text">
           <h3>Zvolte částku</h3>
-          <div class="payment-options">
-            <label>
-              <input type="radio" name="payment-type" value="jednorazove" checked>
-              <span class="button">Jednorázově</span>
-            </label>
-            <label>
-              <input type="radio" name="payment-type" value="mesicne">
-              <span class="button">Měsíčně</span>
-            </label>
+          <div class="frekvence-button-group">
+            <input type="radio" id="jednorazove" name="payment" checked>
+            <label for="jednorazove">Jednorázově</label>
+    
+            <input type="radio" id="mesicne" name="payment">
+            <label for="mesicne">Měsíčně</label>
           </div>
+          <div class="amount-button-group">
+            <input type="radio" id="k300" name="amount" checked>
+            <label for="k300">300 Kč</label>
+    
+            <input type="radio" id="k500" name="amount">
+            <label for="k500">500 Kč</label>
+    
+            <input type="radio" id="k1000" name="amount">
+            <label for="k1000">1000 Kč</label>
+        </div>
         </div>
         <!-- the bellow is the right side of the box with image -->
         <div class="prispevkovy-formular-container-img">

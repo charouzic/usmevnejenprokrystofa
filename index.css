@@ -787,45 +787,80 @@
     width: 95%;
   }
   
-  .payment-options {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    background-color: #DFE1F8; /* Background color for both buttons */
-    border-radius: 20px; /* Apply border-radius to create a rounded background */
-    /* width: 25%; */
+  .frekvence-button-group input[type="radio"] {
+    display: none;
+}
+
+  .frekvence-button-group label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 120px; /* Set a minimum width for the labels */
+      padding: 10px 20px;
+      background-color: #DFE1F8;
+      color: #333;
+      cursor: pointer;
+      border-radius: 20px;
+      margin-right: 10px;
   }
-  
-  .payment-options label {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    flex: 1; /* Distribute the space evenly between buttons */
-    text-align: center; /* Center the button text horizontally */
-    transition: background-color 0.3s ease-in-out;
+
+  /* Style the label when the radio button is checked */
+  .frekvence-button-group input[type="radio"]:checked + label {
+      background-color: #5f67dc;
+      color: #fff;
+      font-weight: bold;
   }
-  
-  .payment-options input[type="radio"] {
+
+  /* Group the buttons with a shared background */
+  .frekvence-button-group {
+      display: inline-block;
+      background-color: #DFE1F8;
+      border-radius: 20px;
+      overflow: hidden;
+  }
+
+  /* Style the labels within the button group */
+  .frekvence-button-group label {
+      margin: 0;
+      border: none;
+      float: left;
+  }
+
+  /* Remove default radio button styles */
+  .amount-button-group input[type="radio"] {
     display: none;
   }
-  
-  .button {
-    display: inline-block;
-    border-radius: 20px;
-    transition: background-color 0.3s ease-in-out;
-    padding: 10px 20px;  /* Adjust padding to control button spacing */
+
+  .amount-button-group {
+    margin-top: 20px;
   }
-  
-  .payment-options label:hover .button {
-    background-color: #5F67DC; /* Change button color on hover */
-    color: #fff;
-    font-weight: bold;
+
+  /* Style the label to look like square buttons */
+  .amount-button-group label {
+      display: inline-block;
+      padding: 10px;
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+      color: #333;
+      text-align: center;
+      width: 65px; /* Adjust the width to change the size of the square border */
+      height: 65px; /* Adjust the height to change the size of the square border */
+      line-height: 65px; /* Center the text vertically within the square */
   }
+
+  /* Style the label when the radio button is checked */
+  .amount-button-group input[type="radio"]:checked + label {
+      border-color: #5f67dc;
+      color: #5f67dc;
+      font-weight: bold;
+  }
+
   
-  .payment-options input[type="radio"]:checked + .button {
-    background-color: #5F67DC; /* Change button color when selected */
-    color: #fff;
-    font-weight: bold;
+  .amount-button-group label {
+      margin: 10px; /* Adjust the spacing between the buttons */
   }
   
 }
