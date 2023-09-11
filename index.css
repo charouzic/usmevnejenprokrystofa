@@ -3,7 +3,6 @@
   .full-page {
     padding-left: 40px;
     padding-right: 40px;
-    /* Add right padding */
   }
 
   .potrebujete-poradit-container {
@@ -41,12 +40,10 @@
 
   nav li {
     margin-right: 20px;
-    /* Adjust the spacing between menu items */
   }
 
   nav li:last-child {
     margin-right: 0;
-    /* Remove the right margin from the last menu item */
   }
 
   nav a {
@@ -56,8 +53,6 @@
   }
 
   .dots-background {
-    /* width: 100%;
-    height: 550px; */
     background-image: url('./public/landing_page_menu_dots.svg');
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -67,13 +62,9 @@
   .oval-button-container {
     display: flex;
     align-items: center;
-    /* Center horizontally */
     justify-content: center;
-    /* Center vertically */
     height: calc(100vh - 150px);
-    /* Calculate the remaining space */
     margin-top: -200px;
-    /* Adjust this value as needed */
   }
 
   .oval-button {
@@ -94,25 +85,18 @@
 
   .oval-button:nth-child(1) img {
     max-width: 100px;
-    /* Adjust the width as needed */
     max-height: 100px;
-    /* Adjust the height as needed */
     margin-right: 10px;
-    /* Add spacing between image and text */
   }
 
   .oval-button:nth-child(2) img {
     max-width: 60px;
-    /* Adjust the width as needed */
     max-height: 60px;
-    /* Adjust the height as needed */
     margin-right: 10px;
-    /* Add spacing between image and text */
   }
 
   .oval-button span {
     font-size: 18px;
-    /* Increase the font size */
     color: white;
   }
 
@@ -138,12 +122,9 @@
   .nadacni-content {
     position: absolute;
     top: 0;
-    /* Position at the top */
     left: 0;
-    /* Position at the left */
     width: 70%;
     padding: 20px;
-    /* Add padding to give some spacing */
   }
 
   .nadacni-header {
@@ -247,11 +228,8 @@
 
   .schuzka-button img {
     max-width: 20px;
-    /* Adjust the width as needed */
     max-height: 20px;
-    /* Adjust the height as needed */
     margin-right: 10px;
-    /* Add spacing between image and text */
   }
 
   .schuzka-button p {
@@ -298,7 +276,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    /* 21px */
   }
 
   .Konzultace-img {
@@ -435,7 +412,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 40px;
+    margin-top: 40px;
   }
 
   .vyberte-co-vas-zajima-header {
@@ -451,7 +428,8 @@
     padding: 20px;
     width: 95%;
   }
-  .co-me-tizi{
+
+  .co-me-tizi {
     display: flex;
   }
 
@@ -626,7 +604,6 @@
     color: var(--color-darkslategray-100);
     text-decoration: none;
     border-radius: 40px;
-    /* border: 0.5px solid var(--color-darkslategray-100); */
     border: 0.5px solid rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
   }
@@ -636,33 +613,53 @@
     color: white; /* Change text color on hover */
   }
 
-  .O-Nás-box {
-    display: flex;
-    align-items: center;
-    padding-bottom: 200px;
-  }
   
-  .O-Nas-img img {
-    max-width: 500px;
-    height: auto;
-    align-self: left;
-    padding-left: 300px;
+  .o-nas-box {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .O-Nas-Podpis-img img {
-    max-width: 400px;
-    height: auto;
-    align-self: left;
-    padding-left: 200px;
+  .o-nas{
+    display: flex;
   }
-    .Nas-pribeh-button{
-    padding: 8px 30px;
-    background-color: var(--color-royalblue);
-    color: white;
+
+  .o-nas-text {
+    padding-left: 5%;
+    flex: 1;
+    order: 2;
+    margin-bottom: 40px;
+  }
+
+  .nas-pribeh-button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--color-royalblue);;
+    color: white; 
     text-decoration: none;
     border-radius: 40px;
-    transition: background-color 0.3s ease;
+    /* border: 2px solid var(--color-royalblue); */
   }
+
+  .o-nas-podpis-img img {
+    flex-shrink: 0; /* Prevent the image from growing */
+    width: 350px;
+    padding-left: 20%;
+    max-width: 100%;
+  }
+
+  .o-nas-abelovi-img {
+    flex-shrink: 0; /* Prevent the image from growing */
+    padding-left: 150px;
+    text-align: right; /* Align the image to the right within its container */
+  }
+
+  .o-nas-abelovi-img img {
+    width: 400px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio based on width */
+  }
+  
 
   /* Center the Nejcastejsi-dotazy-box both horizontally and vertically */
   .Nejcastejsi-dotazy-box {
@@ -678,7 +675,7 @@
     flex-shrink: 0;
   }
 
-  .text{
+  .text {
     color: rgba(46, 62, 77, 0.80);
     flex-shrink: 0;
     margin-right: 30px;
@@ -718,11 +715,11 @@
     display: none;
   }
   
-/* Align items vertically within the flex container */
-.folded-text-container {
-  display: flex;
-  align-items: center; /* Center items vertically */
-}
+  /* Align items vertically within the flex container */
+  .folded-text-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
 
 /* Make the circle smaller */
 .toggle-button {
@@ -740,7 +737,7 @@
   margin-left: auto;
   border: 2px solid #5F67DC;
   transition: border-color 0.3s;
-}
+  }
  
   .inline-text-Nejcastejsi {
     color: rgba(46, 62, 77, 0.80);
@@ -771,6 +768,66 @@
     border-radius: 40px;
     border: 2px solid var(--color-royalblue);
   }
+
+  /* .pomahejte-s-nami {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  .pomahejte-s-nami h2 {
+    text-align: center; /* Center-align the text within the div */
+  }
+
+  .prispevkovy-formular-container {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(95, 103, 220, 0.2);
+    padding: 20px;
+    width: 95%;
+  }
+  
+  .payment-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #DFE1F8; /* Background color for both buttons */
+    border-radius: 20px; /* Apply border-radius to create a rounded background */
+    /* width: 25%; */
+  }
+  
+  .payment-options label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    flex: 1; /* Distribute the space evenly between buttons */
+    text-align: center; /* Center the button text horizontally */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .payment-options input[type="radio"] {
+    display: none;
+  }
+  
+  .button {
+    display: inline-block;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+    padding: 10px 20px;  /* Adjust padding to control button spacing */
+  }
+  
+  .payment-options label:hover .button {
+    background-color: #5F67DC; /* Change button color on hover */
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .payment-options input[type="radio"]:checked + .button {
+    background-color: #5F67DC; /* Change button color when selected */
+    color: #fff;
+    font-weight: bold;
+  }
+  
 }
 /* SETTINGS FOR PHONES - TODO: */
 /* SETTINGS FOR PHONES - TODO: */
