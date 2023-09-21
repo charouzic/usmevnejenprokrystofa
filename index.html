@@ -461,37 +461,42 @@
           const totalAmountInput = document.getElementById('amountInput');
           const frekvenceButtons = document.querySelectorAll('input[name="payment"]');
           const amountButtons = document.querySelectorAll('input[name="amount"]');
-      
+          
           // Add a click event listener to the button
           prispetButton.addEventListener('click', function (e) {
-              e.preventDefault(); // Prevent the default link behavior
-      
-              // Get the selected payment frequency value
-              let selectedFrequency;
-              frekvenceButtons.forEach((button) => {
-                  if (button.checked) {
-                      selectedFrequency = button.id;
-                  }
-              });
-      
-              // Get the selected amount value
-              let selectedAmount;
-              amountButtons.forEach((button) => {
-                  if (button.checked) {
-                      selectedAmount = button.id;
-                  }
-              });
-      
-              // Get the custom amount value
-              const customAmount = totalAmountInput.value;
-      
-              // Construct the URL based on the selected options
-              const baseUrl = 'https://www.darujme.cz/darovat/1205164'; // Replace with your actual URL
-              const url = `${baseUrl}?amount=${selectedAmount || customAmount}&frequency=${selectedFrequency}`;
-              // Open the URL in a new tab
-              window.open(url, '_blank');
+            e.preventDefault(); // Prevent the default link behavior
+        
+            // Get the selected payment frequency value
+            let selectedFrequency;
+            frekvenceButtons.forEach((button) => {
+              if (button.checked) {
+                selectedFrequency = button.id;
+              }
+            });
+        
+            // Get the selected amount value
+            let selectedAmount;
+            amountButtons.forEach((button) => {
+              if (button.checked) {
+                selectedAmount = button.id;
+              }
+            });
+        
+            // Get the custom amount value
+            const customAmount = totalAmountInput.value;
+        
+            // Determine the final amount to use
+            const finalAmount = customAmount || selectedAmount;
+        
+            // Construct the URL based on the selected options
+            const baseUrl = 'https://www.darujme.cz/darovat/1205164'; // Replace with your actual URL
+            const url = `${baseUrl}?amount=${finalAmount}&frequency=${selectedFrequency}`;
+            
+            // Open the URL in a new tab
+            window.open(url, '_blank');
           });
-      </script>
+        </script>
+        
         
         </div>
           <!-- the bellow is the right side of the box with image -->
