@@ -774,9 +774,9 @@
 
   .prispevkovy-formular-container {
     background-color: white;
-    border-radius: 40px;
+    border-radius: 60px;
     box-shadow: 0 0 10px rgba(95, 103, 220, 0.2);
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: row; /* Arrange items horizontally */
     justify-content: space-between; /* Separate columns */
@@ -936,7 +936,7 @@
   }
 
   .prispevkovy-formular-container-img img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     overflow: hidden;
   }
