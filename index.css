@@ -774,9 +774,9 @@
 
   .prispevkovy-formular-container {
     background-color: white;
-    border-radius: 25px;
+    border-radius: 40px;
     box-shadow: 0 0 10px rgba(95, 103, 220, 0.2);
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: row; /* Arrange items horizontally */
     justify-content: space-between; /* Separate columns */
@@ -935,17 +935,10 @@
     flex: 1; /* Take up one-half of the available width */
   }
 
-  /* Style the rounded image container */
-  .rounded-image-container {
-    border-top-right-radius: 25px; /* Round the top right corner */
-    border-bottom-right-radius: 25px; /* Round the bottom right corner */
-    overflow: hidden; /* Hide any overflow content */
-  }
-
-  /* Style the image */
-  .rounded-image-container img {
+  .prispevkovy-formular-container-img img{
     max-width: 100%;
     height: auto;
+    overflow: hidden;
   }
   
 }
