@@ -440,64 +440,72 @@
           <div class="jina-castka-input-container">
             <input type="text" id="amountInput" placeholder="Zadejte jinou částku">
           </div>
-          <script>
-            // Get the input element
-            const amountInput = document.getElementById('amountInput');
-        
-            // Add an event listener to allow only numbers
-            amountInput.addEventListener('input', function () {
-                // Remove non-numeric characters using a regular expression
-                this.value = this.value.replace(/\D/g, '');
-            });
-        </script>
         <div>
           <a href="" class="prispet-button">
             <span>Přispět</span>
           </a>
         </div>
         <script>
-          // Get the button and input elements
-          const prispetButton = document.querySelector('.prispet-button');
-          const totalAmountInput = document.getElementById('amountInput');
-          const frekvenceButtons = document.querySelectorAll('input[name="payment"]');
-          const amountButtons = document.querySelectorAll('input[name="amount"]');
-          
-          // Add a click event listener to the button
-          prispetButton.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent the default link behavior
+          // Wait for the DOM to be fully loaded
+          document.addEventListener('DOMContentLoaded', function () {
+            // Get references to the radio buttons and the input field
+            const radioButtons = document.querySelectorAll('input[name="payment"]');
+            const currentAmountInput = document.getElementById('amountInput');
+            const amountButtons = document.querySelectorAll('input[name="amount"]');
         
-            // Get the selected payment frequency value
-            let selectedFrequency;
-            frekvenceButtons.forEach((button) => {
-              if (button.checked) {
-                selectedFrequency = button.id;
-              }
+            // Add event listener to the radio buttons in amount-button-group
+            amountButtons.forEach(function (amountButton) {
+              amountButton.addEventListener('click', function () {
+                // Clear the input field when an amount button is clicked
+                currentAmountInput.value = '';
+              });
             });
         
-            // Get the selected amount value
-            let selectedAmount;
-            amountButtons.forEach((button) => {
-              if (button.checked) {
-                selectedAmount = button.id;
-              }
+            // Add an event listener to allow only numbers in the custom amount input
+            currentAmountInput.addEventListener('input', function () {
+              // Remove non-numeric characters using a regular expression
+              this.value = this.value.replace(/\D/g, '');
             });
         
-            // Get the custom amount value
-            const customAmount = totalAmountInput.value;
+            // Get the button and input elements for submitting the form
+            const prispetButton = document.querySelector('.prispet-button');
+            const frekvenceButtons = document.querySelectorAll('input[name="payment"]');
         
-            // Determine the final amount to use
-            const finalAmount = customAmount || selectedAmount;
+            // Add a click event listener to the button
+            prispetButton.addEventListener('click', function (e) {
+              e.preventDefault(); // Prevent the default link behavior
         
-            // Construct the URL based on the selected options
-            const baseUrl = 'https://www.darujme.cz/darovat/1205164'; // Replace with your actual URL
-            const url = `${baseUrl}?amount=${finalAmount}&frequency=${selectedFrequency}`;
-            
-            // Open the URL in a new tab
-            window.open(url, '_blank');
+              // Get the selected payment frequency value
+              let selectedFrequency;
+              frekvenceButtons.forEach((button) => {
+                if (button.checked) {
+                  selectedFrequency = button.id;
+                }
+              });
+        
+              // Get the selected amount value
+              let selectedAmount;
+              amountButtons.forEach((button) => {
+                if (button.checked) {
+                  selectedAmount = button.id;
+                }
+              });
+        
+              // Get the custom amount value
+              const customAmount = currentAmountInput.value;
+        
+              // Determine the final amount to use
+              const finalAmount = customAmount || selectedAmount;
+        
+              // Construct the URL based on the selected options
+              const baseUrl = 'https://www.darujme.cz/darovat/1205164'; // Replace with your actual URL
+              const url = `${baseUrl}?amount=${finalAmount}&frequency=${selectedFrequency}`;
+        
+              // Open the URL in a new tab
+              window.open(url, '_blank');
+            });
           });
-        </script>
-        
-        
+        </script>        
         </div>
           <!-- the bellow is the right side of the box with image -->
           <div class="prispevkovy-formular-container-img">
