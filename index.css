@@ -940,6 +940,37 @@
     height: auto;
     overflow: hidden;
   }
+
+  .odecet-daru {
+    padding-left: 40px;
+  }
+
+  .potvrzeni {
+    padding-top: 10px;
+  }
+
+  .vice-info-button {
+    display: inline-block;
+    padding: 10px 30px;
+    color: var(--color-palevioletred);
+    text-decoration: none;
+    border-radius: 40px;
+    border: 2px solid var(--color-palevioletred);
+  }
+
+  .podpora-tech-nejlepsich-section {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .podpora-tech-nejlepsich-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
   
 }
 /* SETTINGS FOR PHONES - TODO: */
