@@ -537,15 +537,85 @@
 
     <section class="podpora-tech-nejlepsich-section">
       <div class="podpora-tech-nejlepsich-container">
-          <h2>Máme podporu těch nejlepších</h2>
-        </div>
-      <div class="podpora-tech-nejlepsich-content">
-        <div class="background-rectangle"></div>
+        <h2>Máme podporu těch nejlepších</h2>
       </div>
-       
-      
-      
+      <div class="podpora-tech-nejlepsich-content">
+        <div class="background-rectangle">
+          <div class="quote-container quote-container-left">
+            <blockquote>
+                <p>
+                    "Měl jsem možnost se s manželi Abelovými opakovaně potkat nejen neformálně, 
+                    ale i ve chvílích, kdy zařizovali něco pro lidi procházející léčbou nebo ztrátou. 
+                    To, co jsem s překvapením a dojetím viděl, byl opravdový zájem druhým pomoci, 
+                    podpořit je a dát jim naději, že i když možností ubývá, stále je co dělat a pro co žít. 
+                    I když v tuto chvíli prozatím podobným trápením neprocházím
+                  <span id="ellipsis1">..."</span>
+                  <span id="more-text-svetlak" style="display:none;">
+                    , někde v pozadí mám jistotu a naději, že bych se měl na koho obrátit a že by mě v tom nenechali. 
+                    S vděčností a nadějí tedy děkuji manželům Abelovým za jejich práci a to, že dokázali svou hlubokou 
+                    ztrátu svého milovaného syna, kterou sami prošli, přetransformovat do pomoci druhým."
+                  </span>
+                
+                
+                  <a href="#" onclick="toggleText('ellipsis1', 'more-text-svetlak', this); return false;">Číst více</a>
+              </p>
+              <footer>
+                <!-- Quote 1 Attribution Here -->
+                <strong>doc. PhDr. Miroslav Světlák, Ph.D.,</strong> Přednosta Ústavu psychologie a psychosomatiky MUNI
+              </footer>
+            </blockquote>
+            <div class="quote-image" style="background-image: url('./public/figma-web6-1@2x.png');">
+              <!-- Image for Quote 1 -->
+            </div>
+          </div>
+          <div class="quote-container quote-container-right">
+            <blockquote>
+              <p>
+                "Velmi si vážíme spolupráce s Nadačním fondem Úsměv nejen pro Kryštofa, protože plní důležitou roli v situacích, 
+                kde my jako pacientská organizace ani jako sociální služba nemůžeme pomoci. 
+                Jedná se zejména o klienty v hmotné nouzi s potřebami doplatku zdravotní i ošetřovatelské pomoci
+                <span id="ellipsis2">..."</span>
+                <span id="more-text-amelie" style="display:none;">
+                  . Možnosti odborného sociálního posouzení v podobě odvolacích a námitkových řízení
+                   nebo zmírnění tvrdosti zákona jsou zdlouhavé a mnohdy i přes veškerou argumentaci neúspěšné. 
+                   Zbývá tedy pouze přímá finanční podpora klienta, kterou může poskytnout nadační fond
+                    a tím zajistit důstojnou paliativní péči a závěr života onkologicky nemocného. 
+                    To jsme si ověřili u naší společné klientky paní Jany. 
+                    NF Úsměv nejen pro Kryštofa díky individualizované finanční podpoře a osobnímu nasazení 
+                    zajistil kvalitní péči ženě, která propadla systémem. 
+                    Jejich role je v tuto chvíli nezastupitelná a jedinečná v oblasti pomoci onkologicky nemocným v těžké finanční situaci."
+                </span>
+              <a href="#" onclick="toggleText('ellipsis2', 'more-text-amelie', this); return false;">Číst více</a>
+            </p>
+              <footer>
+                <!-- Quote 2 Attribution Here -->
+                <strong>Šárka Slavíková,</strong> sociální pracovnice, Amelie z. s.
+              </footer>
+            </blockquote>
+            <div class="quote-image" style="background-image: url('./public/6157834-1@2x.png');">
+              <!-- Image for Quote 2 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function toggleText(ellipsisId, moreTextId, linkElement) {
+          var moreText = document.getElementById(moreTextId);
+          var ellipsis = document.getElementById(ellipsisId);
+        
+          if (moreText.style.display === "none") {
+            moreText.style.display = "inline";
+            ellipsis.style.display = "none";
+            linkElement.textContent = "Méně"; // Change the text to 'less'
+          } else {
+            moreText.style.display = "none";
+            ellipsis.style.display = "inline";
+            linkElement.textContent = "Číst více"; // Change the text to 'more'
+          }
+        }
+        </script>
     </section>
+    
     
   </div>
 </body>
