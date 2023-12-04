@@ -248,7 +248,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 0%;
-  } 
+  }
 
   .blue-text {
     color: #5F67DC;
@@ -305,7 +305,7 @@
     height: 400px; /* Adjust the height as needed */
     margin-bottom: 20px; /* Adjust the margin to control spacing */
   }
-  
+
   .Rectangle {
     position: relative;
     width: 308px; /* Set the width of each rectangle */
@@ -322,26 +322,26 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   /* Style for individual rectangles */
   .Rectangle:nth-child(1) {
     background-color: #FFF;
     left: 450px;
     top: -530px;
   }
-  
+
   .Rectangle:nth-child(2) {
     background-color: #FFF;
     left: 450px; /* Adjust the horizontal position */
     top: -600px;
   }
-  
+
   .Rectangle:nth-child(3) {
     background-color: #FFF;
     left: -210px;
     top: -125px; /* Adjust the vertical position */
   }
-  
+
   .Rectangle:nth-child(4) {
     background-color: #FFF;
     left: -210px; /* Adjust the horizontal position */
@@ -366,7 +366,7 @@
     display: block;
     margin: 0 auto; /* Center-align the image horizontally */
   }
-  
+
   /* Style for text inside rectangles */
   .Rectangle p {
     width: 231px;
@@ -613,7 +613,7 @@
     color: white; /* Change text color on hover */
   }
 
-  
+
   .o-nas-box {
     margin-bottom: 100px;
     display: flex;
@@ -636,7 +636,7 @@
     display: inline-block;
     padding: 10px 30px;
     background-color: var(--color-royalblue);
-    color: white; 
+    color: white;
     text-decoration: none;
     border-radius: 40px;
   }
@@ -658,7 +658,7 @@
     width: 400px; /* Set your desired width */
     height: auto; /* Maintain aspect ratio based on width */
   }
-  
+
 
   /* Center the Nejcastejsi-dotazy-box both horizontally and vertically */
   .Nejcastejsi-dotazy-box {
@@ -709,11 +709,11 @@
     height: 1px;
     background-color: #E1E1E1;
   }
-  
+
   .Folded-text {
     display: none;
   }
-  
+
   /* Align items vertically within the flex container */
   .folded-text-container {
     display: flex;
@@ -737,7 +737,7 @@
   border: 2px solid #5F67DC;
   transition: border-color 0.3s;
   }
- 
+
   .inline-text-Nejcastejsi {
     color: rgba(46, 62, 77, 0.80);
     font-family: Jost;
@@ -758,7 +758,7 @@
     justify-content: center; /* Center the button horizontally within the container */
     margin-top: 20px; /* Adjust the margin as needed */
   }
-  
+
   .Zobrazit-vice-button {
     display: inline-block;
     padding: 10px 30px;
@@ -767,7 +767,7 @@
     border-radius: 40px;
     border: 2px solid var(--color-royalblue);
   }
-  
+
   .pomahejte-s-nami h2 {
     text-align: center; /* Center-align the text within the div */
   }
@@ -789,7 +789,7 @@
     flex: 1; /* Take up one-half of the available width */
     padding-right: 20px; /* Add some spacing between columns */
   }
-  
+
   .frekvence-button-group input[type="radio"] {
     display: none;
 }
@@ -861,7 +861,7 @@
       font-weight: bold;
   }
 
-  
+
   .amount-button-group label {
       margin: 10px; /* Adjust the spacing between the buttons */
   }
@@ -883,7 +883,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: white;  
+      background-color: white;
       padding: 0 10px;
       color: #333; /* Change the text color to contrast with the background */
   }
@@ -897,7 +897,7 @@
     padding: 5px 10px;
   }
 
-  
+
   #amountInput {
       border: none;
       background: none;
@@ -918,13 +918,13 @@
     display: inline-block;
     padding: 10px 30px;
     background-color: var(--color-royalblue);
-    color: white; 
+    color: white;
     text-decoration: none;
     border-radius: 40px;
     font-weight: bold;
     width: 20%;
   }
-  
+
   .pomahejte-s-nami-container {
     display: flex;
     align-items: center;
@@ -962,55 +962,89 @@
     margin-top: 30px;
     text-align: center;
   }
-  
+
   .podpora-tech-nejlepsich-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
+
   .podpora-tech-nejlepsich-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
+
   .background-rectangle {
+    position: relative; /* Add this line */
+    overflow: visible; /* Add this line to prevent images from being clipped */
     width: 65%;
-    height: auto; /* Adjusted to auto to fit the content */
+    height: auto;
     background-color: #FFF2F8;
     border-radius: 100px 0 0 0;
-    padding: 40px; /* Padding inside the rectangle */
-    box-sizing: border-box; /* To include padding in width */
+    /* padding: 20px; */
+    box-sizing: border-box;
   }
-  
-  
-  
-  blockquote {
-    width: 70%; /* Adjust based on your design */
+
+  .first-blockquote {
+
     text-align: left;
-    padding: 10px;
+    /* padding: 20px; */
+    padding-left: 100px;
   }
-  
+
+  .second-blockquote {
+    width: 100%; /* Adjust based on your design */
+    text-align: left;
+    /* padding: 20px; */
+    margin-right: 130px;
+  }
+
+  /* original */
+  /* .quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  } */
   .quote-container {
+    position: relative; /* Add this line */
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
   }
-  
-  .quote-container-left .quote-image {
-    order: -1; /* This will ensure the image is positioned to the left */
-    margin-right: 20px; /* Add some space between the image and the text */
-  }
-  
+
+  /* .quote-container-left .quote-image {
+    order: -1;
+    margin-right: 20px;
+  } */
+
+  /* .quote-container-right .quote-image {
+    order: 1;
+    margin-left: 20px;
+  } */
+
+  .quote-container-left .quote-image,
   .quote-container-right .quote-image {
-    order: 1; /* This will ensure the image is positioned to the right */
-    margin-left: 20px; /* Add some space between the text and the image */
+    position: absolute; /* Change to absolute positioning */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
   }
-  
+
+  .quote-container-left .quote-image {
+    left: -40px; /* Adjust this value as needed */
+  }
+
+  .quote-container-right .quote-image {
+    right: -40px; /* Adjust this value as needed */
+  }
+
   .quote-image {
     width: 150px; /* Adjust based on your design */
     height: 150px; /* Adjust based on your design */
@@ -1018,11 +1052,11 @@
     background-size: cover;
     background-position: center;
   }
-  
+
   footer {
     margin-top: 20px; /* Space between quote and attribution */
   }
-  
+
 }
 /* SETTINGS FOR PHONES - TODO: */
 /* SETTINGS FOR PHONES - TODO: */
