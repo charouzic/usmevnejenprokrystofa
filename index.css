@@ -961,6 +961,7 @@
   .podpora-tech-nejlepsich-section {
     margin-top: 30px;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .podpora-tech-nejlepsich-container {
@@ -1002,13 +1003,6 @@
     margin-right: 130px;
   }
 
-  /* original */
-  /* .quote-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  } */
   .quote-container {
     position: relative; /* Add this line */
     display: flex;
@@ -1016,16 +1010,6 @@
     justify-content: space-between;
     margin-bottom: 20px;
   }
-
-  /* .quote-container-left .quote-image {
-    order: -1;
-    margin-right: 20px;
-  } */
-
-  /* .quote-container-right .quote-image {
-    order: 1;
-    margin-left: 20px;
-  } */
 
   .quote-container-left .quote-image,
   .quote-container-right .quote-image {
@@ -1056,6 +1040,91 @@
   footer {
     margin-top: 20px; /* Space between quote and attribution */
   }
+
+  .spolupracujeme-s {
+    max-width: 80%;
+    /* margin: 0 auto; */
+   /* overflow: hidden;  Hide the overflow */
+  }
+
+  .title-section {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  
+  .title {
+    font-size: 20px; /* You can adjust the font size as needed */
+    margin-right: 20px; /* Adjust the space between the title and the line */
+    font-weight: bolder;
+    color: #2E3E4D; /* Adjust the font color as needed */
+  }
+  
+  .title-section::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: #2E3E4D; /* Adjust the line color as needed */
+    margin-left: 20px; /* Adjust the space between the title and the line */
+  }
+  
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 1 0 25%; /* Each item will take up 25% of the carousel width */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px; /* Add some padding */
+  }
+  
+  .carousel-image {
+    max-width: 100%; /* Ensure the image is not larger than the container */
+    max-height: 100px; /* Adjust the max-height to your preference */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Display block to remove bottom space */
+    margin: 0 auto; /* Center the image */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+  }
+  
+  /* Custom styles for the icons */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    /* Your styles here */
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+  
+  
 
 }
 /* SETTINGS FOR PHONES - TODO: */
