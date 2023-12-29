@@ -711,44 +711,38 @@
       </div>
       <script>
         document.addEventListener('DOMContentLoaded', function() {
-          // Initial setup
-          var currentIndex = 0;
           var carousel = document.querySelector('.carousel');
           var items = document.querySelectorAll('.carousel-item');
           var totalItems = items.length;
-          var visibleItems = 4; // Number of visible items in the carousel
+          var visibleItems = 4;
           var itemWidth = carousel.offsetWidth / visibleItems;
+          var currentIndex = 0;
 
           // Function to update the carousel's position
           function updateCarousel(newIndex) {
-            var newOffset = -newIndex * itemWidth;
+            // Set the currentIndex to the new index after bounds checking
+            currentIndex = newIndex < 0 ? 0 : newIndex >= totalItems - visibleItems ? totalItems - visibleItems : newIndex;
+            var newOffset = -currentIndex * itemWidth;
             carousel.style.transform = 'translateX(' + newOffset + 'px)';
-            currentIndex = newIndex;
           }
 
           // Event listeners for the controls
           document.querySelector('.carousel-control-prev').addEventListener('click', function(event) {
             event.preventDefault();
-            if (currentIndex > 0) {
-              updateCarousel(currentIndex - 1);
-            }
+            updateCarousel(currentIndex - 1);
           });
 
           document.querySelector('.carousel-control-next').addEventListener('click', function(event) {
             event.preventDefault();
-            if (currentIndex < totalItems - visibleItems) {
-              updateCarousel(currentIndex + 1);
-            }
+            updateCarousel(currentIndex + 1);
           });
 
           // Update the carousel when the window is resized
           window.addEventListener('resize', function() {
             itemWidth = carousel.offsetWidth / visibleItems;
-            updateCarousel(currentIndex); // This will adjust the carousel to the new dimensions
+            updateCarousel(currentIndex); // Adjust to the new dimensions
           });
         });
-
-
       </script>
     </section>
   </div>
