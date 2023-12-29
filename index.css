@@ -1074,6 +1074,7 @@
     display: flex;
     transition: transform 0.3s ease-in-out;
     position: relative; /* Added for control positioning */
+    align-items: center; /* added */
   }
   
   .carousel-item {
@@ -1081,6 +1082,10 @@
     box-sizing: border-box;
     text-align: center;
     padding: 15px;
+    /* new bellow */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This centers the logo inside the item both horizontally and vertically */
   }
   
   .carousel-image {
@@ -1103,6 +1108,7 @@
   text-decoration: none; /* Remove underline from text if using text as arrows */
   border: none; /* Remove borders */
   outline: none; /* Remove focus outline */
+  top: calc(50% + 10px);
 }
 
 .carousel-control-prev {
