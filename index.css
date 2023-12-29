@@ -1042,6 +1042,7 @@
   }
 
   .spolupracujeme-s {
+    padding-top: 40px;
     max-width: 80%;
     margin: 0 auto; /* Center the carousel */
     position: relative; /* Needed to position the controls absolutely within the container */
@@ -1056,7 +1057,7 @@
   }
   
   .title {
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 20px;
     font-weight: bolder;
     color: #2E3E4D;
@@ -1099,7 +1100,6 @@
   .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
-  top: 50%;
   transform: translateY(-50%);
   z-index: 1000;
   background-color: transparent; /* Make the background transparent */
@@ -1108,7 +1108,7 @@
   text-decoration: none; /* Remove underline from text if using text as arrows */
   border: none; /* Remove borders */
   outline: none; /* Remove focus outline */
-  top: calc(50% + 10px);
+  top: 75%;
 }
 
 .carousel-control-prev {
