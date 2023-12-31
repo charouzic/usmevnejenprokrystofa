@@ -1097,19 +1097,19 @@
     margin: 0 auto;
   }
   
-  .carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  transform: translateY(-50%);
-  z-index: 1000;
-  background-color: transparent; /* Make the background transparent */
-  color: #333; /* Match the arrow color to your design */
-  font-size: 24px; /* Adjust size as needed */
-  text-decoration: none; /* Remove underline from text if using text as arrows */
-  border: none; /* Remove borders */
-  outline: none; /* Remove focus outline */
-  top: 75%;
-}
+    .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background-color: transparent; /* Make the background transparent */
+    color: #333; /* Match the arrow color to your design */
+    font-size: 24px; /* Adjust size as needed */
+    text-decoration: none; /* Remove underline from text if using text as arrows */
+    border: none; /* Remove borders */
+    outline: none; /* Remove focus outline */
+    top: 75%;
+  }
 
 .carousel-control-prev {
   left: 0;
@@ -1119,70 +1119,162 @@
   right: 0;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  /* Remove the background-image if using text as arrows and adjust content */
-  content: '>'; /* Use appropriate character for arrows */
-  font-size: 30px; /* Adjust as needed */
-}
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    /* Remove the background-image if using text as arrows and adjust content */
+    content: '>'; /* Use appropriate character for arrows */
+    font-size: 30px; /* Adjust as needed */
+  }
 
-.carousel-control-prev-icon {
-  /* If you're using text, you can rotate the '>' character for the previous arrow */
-  transform: rotate(180deg);
-}
+  .carousel-control-prev-icon {
+    /* If you're using text, you can rotate the '>' character for the previous arrow */
+    transform: rotate(180deg);
+  }
 
-.client-testimonials {
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center children horizontally */
-  justify-content: center; /* Center children vertically if there's enough space */
-  min-height: 100vh; /* At least full viewport height */
-  padding: 20px;
-  text-align: center;
-}
+  .client-testimonials {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically if there's enough space */
+    /*min-height: 100vh;  At least full viewport height */
+    padding: 20px;
+    /* text-align: center; */
+  }
 
-.client-testimonials-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* This should center children horizontally */
-  justify-content: center; /* This should center children vertically */
-  max-width: 800px;
-  width: 100%;
-}
-
-
-.testimonial-header h2 {
-  color: #2E3E4D;
-}
-
-.testimonial-content {
-  width: 566px;
-  box-shadow: 0px 0px 10px 0px rgba(128, 128, 128, 0.5);
-  border-radius: 35px;
-  margin-top: 40px;
-  display: flex; /* Add this line */
-  justify-content: center; /* Add this line */
-}
+  .client-testimonials-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This should center children horizontally */
+    justify-content: center; /* This should center children vertically */
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+  }
 
 
-.testimonial-footer button {
-  background-color: #5F67DC;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border: none;
-  border-radius: 35px;
-  margin-top: 30px;
-  font-family: Jost;
-}
+  .testimonial-header h2 {
+    color: #2E3E4D;
+  }
 
+  .testimonial-content {
+    width: 566px;
+    box-shadow: 0px 0px 10px 0px rgba(128, 128, 128, 0.5);
+    border-radius: 35px;
+    margin-top: 40px;
+    display: flex; /* Add this line */
+    justify-content: center; /* Add this line */
+  }
+
+
+  .testimonial-footer button {
+    background-color: #5F67DC;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 35px;
+    margin-top: 30px;
+    font-family: Jost;
+  }
+
+  .testimonial-bubble {
+    position: absolute; /* This will position your bubbles absolutely in relation to the closest positioned ancestor */
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* This will make the div circular */
+    background-size: cover; /* This ensures your background image covers the entire bubble */
+  }
+
+  .bubble-top-left {
+    top: 250px; /* Adjust as needed */
+    right: 800px; /* Adjust as needed */
+    background-image: url('./public/xicht.png'); /* Replace with the path to your image */
+  }
+
+  .bubble-top-right {
+    top: 300px; /* Adjust as needed */
+    right: -150px; /* Adjust as needed */
+    background-image: url('./public/xicht.png'); /* Replace with the path to your image */
+  }
+
+  .bubble-bottom-left {
+    bottom: 100px; /* Adjust as needed */
+    left: -250px; /* Adjust as needed */
+    background-image: url('./public/xicht.png'); /* Replace with the path to your image */
+  }
+
+  .bubble-bottom-right {
+    bottom: 50px; /* Adjust as needed */
+    right: -50px; /* Adjust as needed */
+    background-image: url('./public/xicht.png'); /* Replace with the path to your image */
+  }
+
+  .statistics-section {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    justify-content: space-between;
+    max-width: 100%; /* Allows the section to take full width of the viewport */
+    margin: 0; /* Removes margin */
+    padding: 20px;
+    padding-left: 0; /* Removes padding on the left */
+  }
   
+  .image-container {
+    flex: 0 0 60%; /* Assigns 60% width to the image container */
+    padding-right: 20px; /* Adds space between the image and content */
+    margin: 0; /* Ensures no margin on the sides */
+  }
   
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 0; /* Adjust or remove as needed */
+    display: block; /* Removes any default inline spacing */
+  }
+  
+  .content-container {
+    flex: 1; /* Takes the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px; /* Adds padding between image and content if needed */
+  }
+  
+    .info-card,
+  .statistics {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px; /* Adds space between info card and statistics */
+  }
+
+    .info-card:last-child,
+  .statistics:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Additional styles for info-card specific styling if needed */
+  .info-card {
+    margin-bottom: 10px; /* Adds space between the info card and statistics */
+  }
+
+  .statistics {
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .statistics h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .statistics p {
+    margin-top: 0;
+  }
 
 }
 /* SETTINGS FOR PHONES - TODO: */
