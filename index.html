@@ -840,6 +840,135 @@
         </div>
       </div>
     </section>
+    <section class="podporuji-nas">
+      <div>
+        <div>
+          <div class="podporuji-nas-title-section">
+            <h3 class="podporuji-nas-title">Podporují nás</h3>
+          </div>
+        </div>
+        <div>
+          <div class="podporuji-nas-carousel">
+            <!-- Carousel item 1 -->
+            <div class="podporuji-nas-carousel-item">
+              <a href="https://www.smartemailing.cz" target="_blank" rel="noopener noreferrer">
+                <img src="./public/smart_emailing.png" alt="Smart Emailing" class="podporuji-nas-carousel-image">
+              </a>
+            </div>
+            <!-- Carousel item 2 -->
+            <div class="podporuji-nas-carousel-item">
+              <a href="https://lide-lidem.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./public/nf_lide_lidem.png" alt="Lidé Lidem" class="podporuji-nas-carousel-image">
+              </a>
+            </div>
+            <!-- Carousel item 3 -->
+            <div class="podporuji-nas-carousel-item">
+              <a href="https://fbcliberec.cz" target="_blank" rel="noopener noreferrer">
+                <img src="./public/fbc_liberec.png" alt="FBC Liberec" class="podporuji-nas-carousel-image">
+              </a>
+            </div>
+            <!-- Carousel item 4 -->
+            <div class="podporuji-nas-carousel-item">
+              <a href="https://www.olfincar.cz" target="_blank" rel="noopener noreferrer">
+                <img src="./public/olfin_car.png" alt="OlfinCar" class="podporuji-nas-carousel-image">
+              </a>
+            </div>
+            <!-- Carousel item 5 -->
+            <div class="podporuji-nas-carousel-item">
+              <a href="https://www.bagniaristore.cz" target="_blank" rel="noopener noreferrer">
+                <img src="./public/bagniaristore.jpg" alt="Bagninari Store" class="podporuji-nas-carousel-image">
+              </a>
+            </div>
+            <!-- Carousel item 6 -->
+            <div class="podporuji-nas-carousel-item">
+              <a href="https://www.activate.cz" target="_blank" rel="noopener noreferrer">
+                <img src="./public/etnetera_activate.png" alt="Etnetera Activate" class="podporuji-nas-carousel-image">
+              </a>
+            </div>
+            <!-- Carousel item 7 -->
+            <div class="podporuji-nas-carousel-item">
+              <a href="https://genespector.com" target="_blank" rel="noopener noreferrer">
+                <img src="./public/genespector.png" alt="Genespector" class="podporuji-nas-carousel-image">
+              </a>
+            </div>
+            <!-- Carousel item 8 -->
+            <div class="podporuji-nas-carousel-item">
+              <a href="https://www.goldengate.cz" target="_blank" rel="noopener noreferrer">
+                <img src="./public/golden_gate.png" alt="Golden Gate" class="podporuji-nas-carousel-image">
+              </a>
+            </div>
+            <!-- Carousel item 9 -->
+            <div class="podporuji-nas-carousel-item">
+              <a href="https://www.kaufland.cz" target="_blank" rel="noopener noreferrer">
+                <img src="./public/kaufland.png" alt="Kaufland" class="podporuji-nas-carousel-image">
+              </a>
+            </div>
+            <!-- Carousel item 10 -->
+            <div class="podporuji-nas-carousel-item">
+              <a href="https://www.pelecanus.cz" target="_blank" rel="noopener noreferrer">
+                <img src="./public/nf_pelecanus.jpeg" alt="Nadační fond Pelecanus" class="podporuji-nas-carousel-image">
+              </a>
+            </div>
+            <!-- Carousel item 11 -->
+            <div class="podporuji-nas-carousel-item">
+              <a href="https://www.nfpomoci.cz" target="_blank" rel="noopener noreferrer">
+                <img src="./public/nf_pomoci.jpg" alt="Nadační fond pomoci" class="podporuji-nas-carousel-image">
+              </a>
+            </div>
+            <!-- Carousel item 12 -->
+            <div class="podporuji-nas-carousel-item">
+              <a href="https://www.sazka.cz/" target="_blank" rel="noopener noreferrer">
+                <img src="./public/sazka.png" alt="Sazka" class="podporuji-nas-carousel-image">
+              </a>
+            </div>
+          </div>
+          <!-- Carousel controls -->
+          <a class="podporuji-nas-carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="podporuji-nas-carousel-control-prev-icon" aria-hidden="true">‹</span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="podporuji-nas-carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="podporuji-nas-carousel-control-next-icon" aria-hidden="true">›</span>
+            <span class="sr-only"></span>
+          </a>          
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var carousel = document.querySelector('.podporuji-nas-carousel');
+          var items = document.querySelectorAll('.podporuji-nas-carousel-item');
+          var totalItems = items.length;
+          var visibleItems = 4;
+          var itemWidth = carousel.offsetWidth / visibleItems;
+          var currentIndex = 0;
+
+          // Function to update the carousel's position
+          function updateCarousel(newIndex) {
+            // Set the currentIndex to the new index after bounds checking
+            currentIndex = newIndex < 0 ? 0 : newIndex >= totalItems - visibleItems ? totalItems - visibleItems : newIndex;
+            var newOffset = -currentIndex * itemWidth;
+            carousel.style.transform = 'translateX(' + newOffset + 'px)';
+          }
+
+          // Event listeners for the controls
+          document.querySelector('.podporuji-nas-carousel-control-prev').addEventListener('click', function(event) {
+            event.preventDefault();
+            updateCarousel(currentIndex - 1);
+          });
+
+          document.querySelector('.podporuji-nas-carousel-control-next').addEventListener('click', function(event) {
+            event.preventDefault();
+            updateCarousel(currentIndex + 1);
+          });
+
+          // Update the carousel when the window is resized
+          window.addEventListener('resize', function() {
+            itemWidth = carousel.offsetWidth / visibleItems;
+            updateCarousel(currentIndex); // Adjust to the new dimensions
+          });
+        });
+      </script>
+    </section>
 
   </div>
 </body>
