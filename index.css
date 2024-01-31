@@ -48,12 +48,12 @@
 
   nav a {
     text-decoration: none;
-    color: #9A9BA3;
+    color: #9a9ba3;
     padding: 5px 10px;
   }
 
   .dots-background {
-    background-image: url('./public/01.png');
+    background-image: url("./public/01.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     flex: 1;
@@ -109,7 +109,7 @@
   }
 
   .nadacni-fond {
-    background-image: url('./public/vod-foto2x22.png');
+    background-image: url("./public/vod-foto2x22.png");
     background-size: auto 80%;
     background-position: right center;
     background-repeat: no-repeat;
@@ -180,7 +180,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-left: 20px solid #2E3E4D;
+    border-left: 20px solid #2e3e4d;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
   }
@@ -188,7 +188,7 @@
   .button-text {
     margin-left: 20px;
     font-size: 20px;
-    color: #2E3E4D;
+    color: #2e3e4d;
     white-space: nowrap;
     /* Prevent text from wrapping to next line */
     font-weight: bold;
@@ -251,14 +251,14 @@
   }
 
   .blue-text {
-    color: #5F67DC;
+    color: #5f67dc;
     font-weight: 700;
     text-align: center;
   }
 
   .contact-info {
-    color: #2E3E4D;
-    font-family: 'Jost', sans-serif;
+    color: #2e3e4d;
+    font-family: "Jost", sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -313,8 +313,8 @@
     margin: 10px; /* Adjust margin to create space between rectangles */
     flex-shrink: 0; /* Prevent rectangles from shrinking */
     border-radius: 40px;
-    border: 1px solid #F2F2F2;
-    background: #FFF;
+    border: 1px solid #f2f2f2;
+    background: #fff;
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
     text-align: center; /* Center-align text horizontally */
     display: flex;
@@ -325,39 +325,39 @@
 
   /* Style for individual rectangles */
   .Rectangle:nth-child(1) {
-    background-color: #FFF;
+    background-color: #fff;
     left: 450px;
     top: -530px;
   }
 
   .Rectangle:nth-child(2) {
-    background-color: #FFF;
+    background-color: #fff;
     left: 450px; /* Adjust the horizontal position */
     top: -600px;
   }
 
   .Rectangle:nth-child(3) {
-    background-color: #FFF;
+    background-color: #fff;
     left: -210px;
     top: -125px; /* Adjust the vertical position */
   }
 
   .Rectangle:nth-child(4) {
-    background-color: #FFF;
+    background-color: #fff;
     left: -210px; /* Adjust the horizontal position */
     top: -200px; /* Adjust the vertical position */
   }
 
-    /* Style for the background rectangle */
+  /* Style for the background rectangle */
   .Rectangle:nth-child(5) {
-      flex-shrink: 0;
-      width: 1047px;
-      height: 619px;
-      border-radius: 150px 0px 0px 0px; /* Rounded top left corner */
-      background-color: #F4F9FF;
-      left: -1050px; /* Adjust the horizontal position */
-      top: -475px;
-      z-index: -1; /* Set the z-index to send the rectangle to the back */
+    flex-shrink: 0;
+    width: 1047px;
+    height: 619px;
+    border-radius: 150px 0px 0px 0px; /* Rounded top left corner */
+    background-color: #f4f9ff;
+    left: -1050px; /* Adjust the horizontal position */
+    top: -475px;
+    z-index: -1; /* Set the z-index to send the rectangle to the back */
   }
   /* Style for images inside rectangles */
   .Rectangle img {
@@ -376,7 +376,8 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;    margin: 10px; /* Adjust the margin to separate text from the image */
+    line-height: normal;
+    margin: 10px; /* Adjust the margin to separate text from the image */
   }
 
   .Taky-jsme-si-tim-prosli {
@@ -391,16 +392,16 @@
   }
 
   .prehrat-video {
-      padding-top: 20px;
+    padding-top: 20px;
   }
 
   .prehrat-video-button {
-      padding: 8px 30px;
-      background-color: var(--color-royalblue);
-      color: white;
-      text-decoration: none;
-      border-radius: 40px;
-      transition: background-color 0.3s ease;
+    padding: 8px 30px;
+    background-color: var(--color-royalblue);
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
   }
 
   #video-container {
@@ -481,7 +482,9 @@
   }
 
   .co-me-tizi-button:hover {
-    background-color: var(--color-palevioletred); /* Change the background color on hover */
+    background-color: var(
+      --color-palevioletred
+    ); /* Change the background color on hover */
     color: white; /* Change text color on hover */
   }
 
@@ -493,7 +496,7 @@
     padding: 20px;
     width: 95%;
   }
-  .co-me-ceka{
+  .co-me-ceka {
     display: flex;
   }
 
@@ -546,7 +549,9 @@
   }
 
   .co-me-ceka-button:hover {
-    background-color: var(--color-palevioletred); /* Change the background color on hover */
+    background-color: var(
+      --color-palevioletred
+    ); /* Change the background color on hover */
     color: white; /* Change text color on hover */
   }
 
@@ -558,7 +563,7 @@
     padding: 20px;
     width: 95%;
   }
-  .jak-zit-dal{
+  .jak-zit-dal {
     display: flex;
   }
 
@@ -609,10 +614,11 @@
   }
 
   .jak-zit-dal-button:hover {
-    background-color: var(--color-palevioletred); /* Change the background color on hover */
+    background-color: var(
+      --color-palevioletred
+    ); /* Change the background color on hover */
     color: white; /* Change text color on hover */
   }
-
 
   .o-nas-box {
     margin-bottom: 100px;
@@ -620,7 +626,7 @@
     flex-direction: column;
   }
 
-  .o-nas{
+  .o-nas {
     display: flex;
   }
 
@@ -659,14 +665,13 @@
     height: auto; /* Maintain aspect ratio based on width */
   }
 
-
   /* Center the Nejcastejsi-dotazy-box both horizontally and vertically */
   .Nejcastejsi-dotazy-box {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    background-color: #F4F9FF;
+    background-color: #f4f9ff;
     border-radius: 0px 0px 150px 0px;
     overflow: hidden;
     padding-top: 60px;
@@ -675,7 +680,7 @@
   }
 
   .text {
-    color: rgba(46, 62, 77, 0.80);
+    color: rgba(46, 62, 77, 0.8);
     flex-shrink: 0;
     margin-right: 30px;
     font-family: Jost;
@@ -707,7 +712,7 @@
   .h_line {
     width: 1042px;
     height: 1px;
-    background-color: #E1E1E1;
+    background-color: #e1e1e1;
   }
 
   .Folded-text {
@@ -720,36 +725,36 @@
     align-items: center; /* Center items vertically */
   }
 
-/* Make the circle smaller */
-.toggle-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 16px; /* Decrease the font size to make it smaller */
-  color: #5F67DC;
-  width: 20px; /* Decrease the width and height to make it smaller */
-  height: 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  border: 2px solid #5F67DC;
-  transition: border-color 0.3s;
+  /* Make the circle smaller */
+  .toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Decrease the font size to make it smaller */
+    color: #5f67dc;
+    width: 20px; /* Decrease the width and height to make it smaller */
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    border: 2px solid #5f67dc;
+    transition: border-color 0.3s;
   }
 
   .inline-text-Nejcastejsi {
-    color: rgba(46, 62, 77, 0.80);
+    color: rgba(46, 62, 77, 0.8);
     font-family: Jost;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 140%; /* 33.6px */
   }
-  .Folded-Nejcastejsi-dotazy{
+  .Folded-Nejcastejsi-dotazy {
     border-radius: 48px;
-    background: #FFF;
-    box-shadow: 0px 10px 50px 0px rgba(95, 103, 220, 0.10);
+    background: #fff;
+    box-shadow: 0px 10px 50px 0px rgba(95, 103, 220, 0.1);
     padding: 40px;
   }
 
@@ -792,41 +797,41 @@
 
   .frekvence-button-group input[type="radio"] {
     display: none;
-}
+  }
 
   .frekvence-button-group label {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 120px;
-      padding: 10px 20px;
-      background-color: #DFE1F8;
-      color: #333;
-      cursor: pointer;
-      border-radius: 20px;
-      margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    padding: 10px 20px;
+    background-color: #dfe1f8;
+    color: #333;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-right: 10px;
   }
 
   /* Style the label when the radio button is checked */
   .frekvence-button-group input[type="radio"]:checked + label {
-      background-color: #5f67dc;
-      color: #fff;
-      font-weight: bold;
+    background-color: #5f67dc;
+    color: #fff;
+    font-weight: bold;
   }
 
   /* Group the buttons with a shared background */
   .frekvence-button-group {
-      display: inline-block;
-      background-color: #DFE1F8;
-      border-radius: 20px;
-      overflow: hidden;
+    display: inline-block;
+    background-color: #dfe1f8;
+    border-radius: 20px;
+    overflow: hidden;
   }
 
   /* Style the labels within the button group */
   .frekvence-button-group label {
-      margin: 0;
-      border: none;
-      float: left;
+    margin: 0;
+    border: none;
+    float: left;
   }
 
   /* Remove default radio button styles */
@@ -840,30 +845,29 @@
 
   /* Style the label to look like square buttons */
   .amount-button-group label {
-      display: inline-block;
-      padding: 10px;
-      background-color: #fff;
-      border: 2px solid #ccc;
-      border-radius: 20px;
-      margin-right: 10px;
-      cursor: pointer;
-      color: #333;
-      text-align: center;
-      width: 65px; /* Adjust the width to change the size of the square border */
-      height: 65px; /* Adjust the height to change the size of the square border */
-      line-height: 65px; /* Center the text vertically within the square */
+    display: inline-block;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #333;
+    text-align: center;
+    width: 65px; /* Adjust the width to change the size of the square border */
+    height: 65px; /* Adjust the height to change the size of the square border */
+    line-height: 65px; /* Center the text vertically within the square */
   }
 
   /* Style the label when the radio button is checked */
   .amount-button-group input[type="radio"]:checked + label {
-      border-color: #5f67dc;
-      color: #5f67dc;
-      font-weight: bold;
+    border-color: #5f67dc;
+    color: #5f67dc;
+    font-weight: bold;
   }
 
-
   .amount-button-group label {
-      margin: 10px; /* Adjust the spacing between the buttons */
+    margin: 10px; /* Adjust the spacing between the buttons */
   }
 
   .line-container {
@@ -874,39 +878,38 @@
   }
 
   .line {
-    border-top: 1px solid #DADAE1; /* Change the line color to #DADAE1 */
+    border-top: 1px solid #dadae1; /* Change the line color to #DADAE1 */
     position: relative;
   }
 
   .line-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: white;
-      padding: 0 10px;
-      color: #333; /* Change the text color to contrast with the background */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0 10px;
+    color: #333; /* Change the text color to contrast with the background */
   }
   .jina-castka-input-container {
     width: 50%;
     height: 40px;
     margin-top: 50px;
     display: inline-block;
-    background-color: #F3F4F5;
+    background-color: #f3f4f5;
     border-radius: 20px;
     padding: 5px 10px;
   }
 
-
   #amountInput {
-      border: none;
-      background: none;
-      outline: none;
-      font-size: 16px;
-      width: 100%;
-      padding: 0;
-      text-align: center;
-      line-height: 40px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    line-height: 40px;
   }
   #amountInput::placeholder {
     text-align: center; /* Center the text horizontally within the input field */
@@ -935,7 +938,7 @@
     flex: 1; /* Take up one-half of the available width */
   }
 
-  .prispevkovy-formular-container-img img{
+  .prispevkovy-formular-container-img img {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -983,14 +986,13 @@
     overflow: visible; /* Add this line to prevent images from being clipped */
     width: 65%;
     height: auto;
-    background-color: #FFF2F8;
+    background-color: #fff2f8;
     border-radius: 100px 0 0 0;
     /* padding: 20px; */
     box-sizing: border-box;
   }
 
   .first-blockquote {
-
     text-align: left;
     /* padding: 20px; */
     padding-left: 100px;
@@ -1048,36 +1050,36 @@
     position: relative; /* Needed to position the controls absolutely within the container */
     overflow: hidden; /* This will hide the overflowed content */
   }
-  
+
   .title-section {
     display: flex;
     align-items: center;
     white-space: nowrap;
     margin-bottom: 20px; /* Add some space between title and carousel */
   }
-  
+
   .title {
     font-size: 18px;
     margin-right: 20px;
     font-weight: bolder;
-    color: #2E3E4D;
+    color: #2e3e4d;
   }
-  
+
   .title-section::after {
-    content: '';
+    content: "";
     flex-grow: 1;
     height: 1px;
-    background: #2E3E4D;
+    background: #2e3e4d;
     margin-left: 20px;
   }
-  
+
   .carousel {
     display: flex;
     transition: transform 0.3s ease-in-out;
     position: relative; /* Added for control positioning */
     align-items: center; /* added */
   }
-  
+
   .carousel-item {
     flex: 1 0 25%;
     box-sizing: border-box;
@@ -1088,7 +1090,7 @@
     justify-content: center;
     align-items: center; /* This centers the logo inside the item both horizontally and vertically */
   }
-  
+
   .carousel-image {
     max-width: 100%;
     max-height: 100px;
@@ -1096,8 +1098,8 @@
     display: block;
     margin: 0 auto;
   }
-  
-    .carousel-control-prev,
+
+  .carousel-control-prev,
   .carousel-control-next {
     position: absolute;
     transform: translateY(-50%);
@@ -1111,18 +1113,18 @@
     top: 75%;
   }
 
-.carousel-control-prev {
-  left: 0;
-}
+  .carousel-control-prev {
+    left: 0;
+  }
 
-.carousel-control-next {
-  right: 0;
-}
+  .carousel-control-next {
+    right: 0;
+  }
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     /* Remove the background-image if using text as arrows and adjust content */
-    content: '>'; /* Use appropriate character for arrows */
+    content: ">"; /* Use appropriate character for arrows */
     font-size: 30px; /* Adjust as needed */
   }
 
@@ -1151,9 +1153,8 @@
     position: relative;
   }
 
-
   .testimonial-header h2 {
-    color: #2E3E4D;
+    color: #2e3e4d;
   }
 
   .testimonial-content {
@@ -1165,9 +1166,8 @@
     justify-content: center; /* Add this line */
   }
 
-
   .testimonial-footer button {
-    background-color: #5F67DC;
+    background-color: #5f67dc;
     color: white;
     padding: 10px 25px;
     text-align: center;
@@ -1193,7 +1193,7 @@
   .bubble-top-left {
     top: 250px; /* Adjust as needed */
     right: 800px; /* Adjust as needed */
-    background-image: url('./public/face5.png'); /* Replace with the path to your image */
+    background-image: url("./public/face5.png"); /* Replace with the path to your image */
   }
 
   .bubble-top-right {
@@ -1201,13 +1201,13 @@
     right: -50px; /* Adjust as needed */
     width: 77px;
     height: 70px;
-    background-image: url('./public/face4.png'); /* Replace with the path to your image */
+    background-image: url("./public/face4.png"); /* Replace with the path to your image */
   }
 
   .bubble-bottom-left {
     bottom: 100px; /* Adjust as needed */
     left: -250px; /* Adjust as needed */
-    background-image: url('./public/face3.png'); /* Replace with the path to your image */
+    background-image: url("./public/face3.png"); /* Replace with the path to your image */
   }
 
   .bubble-bottom-right {
@@ -1215,13 +1215,13 @@
     right: -10px; /* Adjust as needed */
     width: 77px;
     height: 70px;
-    background-image: url('./public/face2.png'); /* Replace with the path to your image */
+    background-image: url("./public/face2.png"); /* Replace with the path to your image */
   }
 
   .bubble-middle-right {
     top: 350px; /* Adjust as needed */
     right: -225px; /* Adjust as needed */
-    background-image: url('./public/face6.png'); /* Replace with the path to your image */
+    background-image: url("./public/face6.png"); /* Replace with the path to your image */
   }
 
   .statistics-section {
@@ -1233,20 +1233,20 @@
     padding: 20px;
     padding-left: 0; /* Removes padding on the left */
   }
-  
+
   .image-container {
     flex: 0 0 60%; /* Assigns 60% width to the image container */
     padding-right: 20px; /* Adds space between the image and content */
     margin: 0; /* Ensures no margin on the sides */
   }
-  
+
   .image-container img {
     width: 100%;
     height: auto;
     border-radius: 0; /* Adjust or remove as needed */
     display: block; /* Removes any default inline spacing */
   }
-  
+
   .content-container {
     flex: 1; /* Takes the remaining space */
     display: flex;
@@ -1254,19 +1254,19 @@
     justify-content: flex-start;
     padding-left: 20px; /* Adds padding between image and content if needed */
   }
-  
-    .info-card,
+
+  .info-card,
   .statistics {
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px; /* Adds space between info card and statistics */
   }
 
-    .info-card:last-child,
+  .info-card:last-child,
   .statistics:last-child {
     margin-bottom: 0;
   }
-  
+
   /* Additional styles for info-card specific styling if needed */
   .info-card {
     margin-bottom: 10px; /* Adds space between the info card and statistics */
@@ -1293,36 +1293,36 @@
     position: relative; /* Needed to position the controls absolutely within the container */
     overflow: hidden; /* This will hide the overflowed content */
   }
-  
+
   .podporuji-nas-title-section {
     display: flex;
     align-items: center;
     white-space: nowrap;
     margin-bottom: 20px; /* Add some space between title and carousel */
   }
-  
+
   .podporuji-nas-title {
     font-size: 18px;
     margin-right: 20px;
     font-weight: bolder;
-    color: #2E3E4D;
+    color: #2e3e4d;
   }
-  
+
   .podporuji-nas-title-section::after {
-    content: '';
+    content: "";
     flex-grow: 1;
     height: 1px;
-    background: #2E3E4D;
+    background: #2e3e4d;
     margin-left: 20px;
   }
-  
+
   .podporuji-nas-carousel {
     display: flex;
     transition: transform 0.3s ease-in-out;
     position: relative; /* Added for control positioning */
     align-items: center; /* added */
   }
-  
+
   .podporuji-nas-carousel-item {
     flex: 1 0 25%;
     box-sizing: border-box;
@@ -1333,7 +1333,7 @@
     justify-content: center;
     align-items: center; /* This centers the logo inside the item both horizontally and vertically */
   }
-  
+
   .podporuji-nas-carousel-image {
     max-width: 100%;
     max-height: 100px;
@@ -1341,20 +1341,20 @@
     display: block;
     margin: 0 auto;
   }
-  
-    .podporuji-nas-carousel-control-prev,
-    .podporuji-nas-carousel-control-next {
-      position: absolute;
-      transform: translateY(-50%);
-      z-index: 1000;
-      background-color: transparent; /* Make the background transparent */
-      color: #333; /* Match the arrow color to your design */
-      font-size: 24px; /* Adjust size as needed */
-      text-decoration: none; /* Remove underline from text if using text as arrows */
-      border: none; /* Remove borders */
-      outline: none; /* Remove focus outline */
-      top: 75%;
-    }
+
+  .podporuji-nas-carousel-control-prev,
+  .podporuji-nas-carousel-control-next {
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background-color: transparent; /* Make the background transparent */
+    color: #333; /* Match the arrow color to your design */
+    font-size: 24px; /* Adjust size as needed */
+    text-decoration: none; /* Remove underline from text if using text as arrows */
+    border: none; /* Remove borders */
+    outline: none; /* Remove focus outline */
+    top: 75%;
+  }
 
   .podporuji-nas-carousel-control-prev {
     left: 0;
@@ -1364,10 +1364,10 @@
     right: 0;
   }
 
-    .podporuji-nas-carousel-control-prev-icon,
+  .podporuji-nas-carousel-control-prev-icon,
   .podporuji-nas-carousel-control-next-icon {
     /* Remove the background-image if using text as arrows and adjust content */
-    content: '>'; /* Use appropriate character for arrows */
+    content: ">"; /* Use appropriate character for arrows */
     font-size: 30px; /* Adjust as needed */
   }
 
@@ -1375,7 +1375,72 @@
     /* If you're using text, you can rotate the '>' character for the previous arrow */
     transform: rotate(180deg);
   }
+}
 
+.footer {
+  margin-top: 143px;
+  text-align: center;
+}
+
+.rounded-box {
+  width: 100%; /* Full width of the viewport */
+  height: auto; /* Specify the desired height */
+  border-radius: 150px 0 0 0;
+  background: #f4f9ff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.footer-img img {
+  max-width: 20%; /* Adjust the width to make it smaller */
+  height: auto;
+  margin-left: 65%; /* Add some left margin for spacing */
+  margin-top: -75px; /* Move the image up by adjusting the margin-top */
+}
+
+.left-text {
+  margin-top: -10%; /* Move the text up by adjusting the margin-top */
+  margin-left: 13%; /* Add right margin to the text */
+  color: #2e3e4d;
+  text-align: left; /* Align the text to the left */
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+}
+
+.middle-text-footer {
+  color: #2e3e4d;
+  font-family: Jost;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 16.8px */
+  margin-top: 50px;
+}
+
+.rings-container1 {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 77%;
+  flex-direction: row; /* Circles in a row */
+}
+
+.ring {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f4f9ff;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring-icon {
+  color: #2e3e4d;
+  font-size: 20px;
 }
 /* SETTINGS FOR PHONES - TODO: */
 /* SETTINGS FOR PHONES - TODO: */
@@ -1391,4 +1456,5 @@
 /* SETTINGS FOR PHONES - TODO: */
 /* SETTINGS FOR PHONES - TODO: */
 /* SETTINGS FOR PHONES - TODO: */
-@media only screen and (max-width: 860px) {}
+@media only screen and (max-width: 860px) {
+}

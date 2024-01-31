@@ -406,8 +406,9 @@
       <div class="pomahejte-s-nami-text">
         <h2>Pomáhejte s námi</h2>
         <p>
-          Pomáhejte nám pomáhat, prosím. I sebemenší částka má obrovský význam. 
-          Pomáhat můžete i přes portál <a href="https://givt.cz/" style="color: #5F67DC; text-decoration: none;" target="_blank">https://givt.cz/</a>, který spolupracuje s eshopy <br>
+          Pomáhejte nám pomáhat, prosím. I sebemenší částka má obrovský význam.
+          Pomáhat můžete i přes portál <a href="https://givt.cz/" style="color: #5F67DC; text-decoration: none;"
+            target="_blank">https://givt.cz/</a>, který spolupracuje s eshopy <br>
           a procento z vašeho nákupu daruje našemu nadačnímu fondu.
         </p>
       </div>
@@ -418,100 +419,100 @@
             <div class="frekvence-button-group">
               <input type="radio" id="once" name="payment" checked>
               <label for="once">Jednorázově</label>
-      
+
               <input type="radio" id="monthly" name="payment">
               <label for="monthly">Měsíčně</label>
             </div>
             <div class="amount-button-group">
               <input type="radio" id="300" name="amount">
               <label for="300">300 Kč</label>
-      
+
               <input type="radio" id="500" name="amount">
               <label for="500">500 Kč</label>
-      
+
               <input type="radio" id="1000" name="amount">
               <label for="1000">1000 Kč</label>
-          </div>
-          <div class="line-container">
-            <div class="line">
-                <span class="line-text">nebo</span>
             </div>
+            <div class="line-container">
+              <div class="line">
+                <span class="line-text">nebo</span>
+              </div>
+            </div>
+            <div class="jina-castka-input-container">
+              <input type="text" id="amountInput" placeholder="Zadejte jinou částku">
+            </div>
+            <div>
+              <a href="" class="prispet-button">
+                <span>Přispět</span>
+              </a>
+            </div>
+            <script>
+              // Wait for the DOM to be fully loaded
+              document.addEventListener('DOMContentLoaded', function () {
+                // Get references to the radio buttons and the input field
+                const radioButtons = document.querySelectorAll('input[name="payment"]');
+                const currentAmountInput = document.getElementById('amountInput');
+                const amountButtons = document.querySelectorAll('input[name="amount"]');
+
+                // Add event listener to the radio buttons in amount-button-group
+                amountButtons.forEach(function (amountButton) {
+                  amountButton.addEventListener('click', function () {
+                    // Clear the input field when an amount button is clicked
+                    currentAmountInput.value = '';
+                  });
+                });
+
+                // Add an event listener to allow only numbers in the custom amount input
+                currentAmountInput.addEventListener('input', function () {
+                  // Remove non-numeric characters using a regular expression
+                  this.value = this.value.replace(/\D/g, '');
+
+                  // Uncheck the radio buttons in amount-button-group
+                  amountButtons.forEach(function (amountButton) {
+                    amountButton.checked = false;
+                  });
+                });
+
+                // Get the button and input elements for submitting the form
+                const prispetButton = document.querySelector('.prispet-button');
+                const frekvenceButtons = document.querySelectorAll('input[name="payment"]');
+
+                // Add a click event listener to the button
+                prispetButton.addEventListener('click', function (e) {
+                  e.preventDefault(); // Prevent the default link behavior
+
+                  // Get the selected payment frequency value
+                  let selectedFrequency;
+                  frekvenceButtons.forEach((button) => {
+                    if (button.checked) {
+                      selectedFrequency = button.id;
+                    }
+                  });
+
+                  // Get the selected amount value
+                  let selectedAmount;
+                  amountButtons.forEach((button) => {
+                    if (button.checked) {
+                      selectedAmount = button.id;
+                    }
+                  });
+
+                  // Get the custom amount value
+                  const customAmount = currentAmountInput.value;
+
+                  // Determine the final amount to use
+                  const finalAmount = customAmount || selectedAmount;
+
+                  // Construct the URL based on the selected options
+                  const baseUrl = 'https://www.darujme.cz/darovat/1205164'; // Replace with your actual URL
+                  const url = `${baseUrl}?amount=${finalAmount}&frequency=${selectedFrequency}`;
+
+                  // Open the URL in a new tab
+                  window.open(url, '_blank');
+                });
+              });
+            </script>
           </div>
-          <div class="jina-castka-input-container">
-            <input type="text" id="amountInput" placeholder="Zadejte jinou částku">
-          </div>
-        <div>
-          <a href="" class="prispet-button">
-            <span>Přispět</span>
-          </a>
-        </div>
-        <script>
-          // Wait for the DOM to be fully loaded
-          document.addEventListener('DOMContentLoaded', function () {
-            // Get references to the radio buttons and the input field
-            const radioButtons = document.querySelectorAll('input[name="payment"]');
-            const currentAmountInput = document.getElementById('amountInput');
-            const amountButtons = document.querySelectorAll('input[name="amount"]');
-
-            // Add event listener to the radio buttons in amount-button-group
-            amountButtons.forEach(function (amountButton) {
-              amountButton.addEventListener('click', function () {
-                // Clear the input field when an amount button is clicked
-                currentAmountInput.value = '';
-              });
-            });
-
-            // Add an event listener to allow only numbers in the custom amount input
-            currentAmountInput.addEventListener('input', function () {
-              // Remove non-numeric characters using a regular expression
-              this.value = this.value.replace(/\D/g, '');
-              
-              // Uncheck the radio buttons in amount-button-group
-              amountButtons.forEach(function (amountButton) {
-                amountButton.checked = false;
-              });
-            });
-
-            // Get the button and input elements for submitting the form
-            const prispetButton = document.querySelector('.prispet-button');
-            const frekvenceButtons = document.querySelectorAll('input[name="payment"]');
-
-            // Add a click event listener to the button
-            prispetButton.addEventListener('click', function (e) {
-              e.preventDefault(); // Prevent the default link behavior
-
-              // Get the selected payment frequency value
-              let selectedFrequency;
-              frekvenceButtons.forEach((button) => {
-                if (button.checked) {
-                  selectedFrequency = button.id;
-                }
-              });
-
-              // Get the selected amount value
-              let selectedAmount;
-              amountButtons.forEach((button) => {
-                if (button.checked) {
-                  selectedAmount = button.id;
-                }
-              });
-
-              // Get the custom amount value
-              const customAmount = currentAmountInput.value;
-
-              // Determine the final amount to use
-              const finalAmount = customAmount || selectedAmount;
-
-              // Construct the URL based on the selected options
-              const baseUrl = 'https://www.darujme.cz/darovat/1205164'; // Replace with your actual URL
-              const url = `${baseUrl}?amount=${finalAmount}&frequency=${selectedFrequency}`;
-
-              // Open the URL in a new tab
-              window.open(url, '_blank');
-            });
-          });
-        </script>        
-        </div>
           <!-- the bellow is the right side of the box with image -->
           <div class="prispevkovy-formular-container-img">
             <img src="./public/donate_img.png" alt="">
@@ -521,7 +522,8 @@
       <div class="odecet-daru">
         <h3>Odečet daru z daní</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam.
         </p>
         <p class="potvrzeni">
           <b>Jak získat potvrzení o daru?</b>
@@ -543,21 +545,21 @@
         <div class="background-rectangle">
           <div class="quote-container quote-container-left">
             <blockquote class="first-blockquote">
-                <p>
-                    "Měl jsem možnost se s manželi Abelovými opakovaně potkat nejen neformálně, 
-                    ale i ve chvílích, kdy zařizovali něco pro lidi procházející léčbou nebo ztrátou. 
-                    To, co jsem s překvapením a dojetím viděl, byl opravdový zájem druhým pomoci, 
-                    podpořit je a dát jim naději, že i když možností ubývá, stále je co dělat a pro co žít. 
-                    I když v tuto chvíli prozatím podobným trápením neprocházím
-                  <span id="ellipsis1">..."</span>
-                  <span id="more-text-svetlak" style="display:none;">
-                    , někde v pozadí mám jistotu a naději, že bych se měl na koho obrátit a že by mě v tom nenechali. 
-                    S vděčností a nadějí tedy děkuji manželům Abelovým za jejich práci a to, že dokázali svou hlubokou 
-                    ztrátu svého milovaného syna, kterou sami prošli, přetransformovat do pomoci druhým."
-                  </span>
-                
-                
-                  <a href="#" onclick="toggleText('ellipsis1', 'more-text-svetlak', this); return false;">Číst více</a>
+              <p>
+                "Měl jsem možnost se s manželi Abelovými opakovaně potkat nejen neformálně,
+                ale i ve chvílích, kdy zařizovali něco pro lidi procházející léčbou nebo ztrátou.
+                To, co jsem s překvapením a dojetím viděl, byl opravdový zájem druhým pomoci,
+                podpořit je a dát jim naději, že i když možností ubývá, stále je co dělat a pro co žít.
+                I když v tuto chvíli prozatím podobným trápením neprocházím
+                <span id="ellipsis1">..."</span>
+                <span id="more-text-svetlak" style="display:none;">
+                  , někde v pozadí mám jistotu a naději, že bych se měl na koho obrátit a že by mě v tom nenechali.
+                  S vděčností a nadějí tedy děkuji manželům Abelovým za jejich práci a to, že dokázali svou hlubokou
+                  ztrátu svého milovaného syna, kterou sami prošli, přetransformovat do pomoci druhým."
+                </span>
+
+
+                <a href="#" onclick="toggleText('ellipsis1', 'more-text-svetlak', this); return false;">Číst více</a>
               </p>
               <footer>
                 <!-- Quote 1 Attribution Here -->
@@ -571,22 +573,24 @@
           <div class="quote-container quote-container-right">
             <blockquote class="second-blockquote">
               <p>
-                "Velmi si vážíme spolupráce s Nadačním fondem Úsměv nejen pro Kryštofa, protože plní důležitou roli v situacích, 
-                kde my jako pacientská organizace ani jako sociální služba nemůžeme pomoci. 
+                "Velmi si vážíme spolupráce s Nadačním fondem Úsměv nejen pro Kryštofa, protože plní důležitou roli v
+                situacích,
+                kde my jako pacientská organizace ani jako sociální služba nemůžeme pomoci.
                 Jedná se zejména o klienty v hmotné nouzi s potřebami doplatku zdravotní i ošetřovatelské pomoci
                 <span id="ellipsis2">..."</span>
                 <span id="more-text-amelie" style="display:none;">
                   . Možnosti odborného sociálního posouzení v podobě odvolacích a námitkových řízení
-                   nebo zmírnění tvrdosti zákona jsou zdlouhavé a mnohdy i přes veškerou argumentaci neúspěšné. 
-                   Zbývá tedy pouze přímá finanční podpora klienta, kterou může poskytnout nadační fond
-                    a tím zajistit důstojnou paliativní péči a závěr života onkologicky nemocného. 
-                    To jsme si ověřili u naší společné klientky paní Jany. 
-                    NF Úsměv nejen pro Kryštofa díky individualizované finanční podpoře a osobnímu nasazení 
-                    zajistil kvalitní péči ženě, která propadla systémem. 
-                    Jejich role je v tuto chvíli nezastupitelná a jedinečná v oblasti pomoci onkologicky nemocným v těžké finanční situaci."
+                  nebo zmírnění tvrdosti zákona jsou zdlouhavé a mnohdy i přes veškerou argumentaci neúspěšné.
+                  Zbývá tedy pouze přímá finanční podpora klienta, kterou může poskytnout nadační fond
+                  a tím zajistit důstojnou paliativní péči a závěr života onkologicky nemocného.
+                  To jsme si ověřili u naší společné klientky paní Jany.
+                  NF Úsměv nejen pro Kryštofa díky individualizované finanční podpoře a osobnímu nasazení
+                  zajistil kvalitní péči ženě, která propadla systémem.
+                  Jejich role je v tuto chvíli nezastupitelná a jedinečná v oblasti pomoci onkologicky nemocným v těžké
+                  finanční situaci."
                 </span>
-              <a href="#" onclick="toggleText('ellipsis2', 'more-text-amelie', this); return false;">Číst více</a>
-            </p>
+                <a href="#" onclick="toggleText('ellipsis2', 'more-text-amelie', this); return false;">Číst více</a>
+              </p>
               <footer>
                 <!-- Quote 2 Attribution Here -->
                 <strong>Šárka Slavíková,</strong> sociální pracovnice, Amelie z. s.
@@ -602,7 +606,7 @@
         function toggleText(ellipsisId, moreTextId, linkElement) {
           var moreText = document.getElementById(moreTextId);
           var ellipsis = document.getElementById(ellipsisId);
-        
+
           if (moreText.style.display === "none") {
             moreText.style.display = "inline";
             ellipsis.style.display = "none";
@@ -613,7 +617,7 @@
             linkElement.textContent = "Číst více"; // Change the text to 'more'
           }
         }
-        </script>
+      </script>
     </section>
 
     <section class="spolupracujeme-s">
@@ -658,7 +662,8 @@
             <!-- Carousel item 6 -->
             <div class="carousel-item">
               <a href="https://hlaspacientu.cz/" target="_blank" rel="noopener noreferrer">
-                <img src="./public/hlas_onkologickych_pacientu.png" alt="Hlas onkologických pacientů" class="carousel-image">
+                <img src="./public/hlas_onkologickych_pacientu.png" alt="Hlas onkologických pacientů"
+                  class="carousel-image">
               </a>
             </div>
             <!-- Carousel item 7 -->
@@ -670,19 +675,22 @@
             <!-- Carousel item 8 -->
             <div class="carousel-item">
               <a href="https://www.kappa-praha.cz" target="_blank" rel="noopener noreferrer">
-                <img src="./public/klinika_ambulantni_psychologie.png" alt="Klinika ambulantní psychologie" class="carousel-image">
+                <img src="./public/klinika_ambulantni_psychologie.png" alt="Klinika ambulantní psychologie"
+                  class="carousel-image">
               </a>
             </div>
             <!-- Carousel item 9 -->
             <div class="carousel-item">
               <a href="https://www.pinkbubble.cz/cz/uvod/" target="_blank" rel="noopener noreferrer">
-                <img src="./public/nadacni_fond_PINK_BUBBLE.png" alt="Nadační fond PINK BUBBLE" class="carousel-image">
+                <img src="./public/nadacni_fond_PINK_BUBBLE.png" alt="Nadační fond PINK BUBBLE"
+                  class="carousel-image">
               </a>
             </div>
             <!-- Carousel item 10 -->
             <div class="carousel-item">
               <a href="https://www.nfppt.cz/" target="_blank" rel="noopener noreferrer">
-                <img src="./public/nadacni_fond_pro_protonovou_terapii.png" alt="Nadační fond pro protonovou terapii" class="carousel-image">
+                <img src="./public/nadacni_fond_pro_protonovou_terapii.png" alt="Nadační fond pro protonovou terapii"
+                  class="carousel-image">
               </a>
             </div>
             <!-- Carousel item 11 -->
@@ -700,7 +708,8 @@
             <!-- Carousel item 13 -->
             <div class="carousel-item">
               <a href="https://www.nudz.cz/" target="_blank" rel="noopener noreferrer">
-                <img src="./public/narodni_ustav_dusevniho_zdravi.jpg" alt="Národní ústav duševního zdraví" class="carousel-image">
+                <img src="./public/narodni_ustav_dusevniho_zdravi.jpg" alt="Národní ústav duševního zdraví"
+                  class="carousel-image">
               </a>
             </div>
             <!-- Carousel item 14 -->
@@ -754,11 +763,11 @@
           <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true">›</span>
             <span class="sr-only"></span>
-          </a>          
+          </a>
         </div>
       </div>
       <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
           var carousel = document.querySelector('.carousel');
           var items = document.querySelectorAll('.carousel-item');
           var totalItems = items.length;
@@ -775,18 +784,18 @@
           }
 
           // Event listeners for the controls
-          document.querySelector('.carousel-control-prev').addEventListener('click', function(event) {
+          document.querySelector('.carousel-control-prev').addEventListener('click', function (event) {
             event.preventDefault();
             updateCarousel(currentIndex - 1);
           });
 
-          document.querySelector('.carousel-control-next').addEventListener('click', function(event) {
+          document.querySelector('.carousel-control-next').addEventListener('click', function (event) {
             event.preventDefault();
             updateCarousel(currentIndex + 1);
           });
 
           // Update the carousel when the window is resized
-          window.addEventListener('resize', function() {
+          window.addEventListener('resize', function () {
             itemWidth = carousel.offsetWidth / visibleItems;
             updateCarousel(currentIndex); // Adjust to the new dimensions
           });
@@ -805,14 +814,17 @@
 
         <div class="testimonial-header">
           <h2>Zkušenosti našich klientů</h2>
-          <p>Dovolte nám podělit se s vámi o některé z referencí. Jsme vděční všem, kdo si najdou chvíli času pro sepsání jejich zkušenosti s naší prací.</p>
+          <p>Dovolte nám podělit se s vámi o některé z referencí. Jsme vděční všem, kdo si najdou chvíli času pro
+            sepsání jejich zkušenosti s naší prací.</p>
         </div>
         <div class="testimonial-content">
           <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
           <div class="elfsight-app-5b78ba34-10d5-437d-8e31-052445525208" data-elfsight-app-lazy></div>
         </div>
         <div class="testimonial-footer">
-          <button onclick="window.open('https://search.google.com/local/writereview?placeid=ChIJS7iocqeVC0cRVEgz1NH79DU', '_blank');">Napsat recenzi</button>
+          <button
+            onclick="window.open('https://search.google.com/local/writereview?placeid=ChIJS7iocqeVC0cRVEgz1NH79DU', '_blank');">Napsat
+            recenzi</button>
         </div>
       </div>
     </section>
@@ -824,10 +836,10 @@
       <div class="content-container">
         <div class="info-card">
           <h2>Jen díky vám náš nadační fond <span style="color: #5F67DC;">pomáhá</span></h2>
-          <p>Děkujeme všem jednorázovým i pravidelným dárcům našim velkým sponzorům. 
+          <p>Děkujeme všem jednorázovým i pravidelným dárcům našim velkým sponzorům.
             Jen díky vaší pomoci můžeme pokračovat v naší činosti.</p>
         </div>
-      
+
         <!-- Statistics Section -->
         <div class="statistics">
           <p>Statistiky k 30.6.2023:</p>
@@ -906,7 +918,8 @@
             <!-- Carousel item 10 -->
             <div class="podporuji-nas-carousel-item">
               <a href="https://www.pelecanus.cz" target="_blank" rel="noopener noreferrer">
-                <img src="./public/nf_pelecanus.jpeg" alt="Nadační fond Pelecanus" class="podporuji-nas-carousel-image">
+                <img src="./public/nf_pelecanus.jpeg" alt="Nadační fond Pelecanus"
+                  class="podporuji-nas-carousel-image">
               </a>
             </div>
             <!-- Carousel item 11 -->
@@ -930,11 +943,11 @@
           <a class="podporuji-nas-carousel-control-next" href="#carouselExample" role="button" data-slide="next">
             <span class="podporuji-nas-carousel-control-next-icon" aria-hidden="true">›</span>
             <span class="sr-only"></span>
-          </a>          
+          </a>
         </div>
       </div>
       <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
           var carousel = document.querySelector('.podporuji-nas-carousel');
           var items = document.querySelectorAll('.podporuji-nas-carousel-item');
           var totalItems = items.length;
@@ -951,18 +964,18 @@
           }
 
           // Event listeners for the controls
-          document.querySelector('.podporuji-nas-carousel-control-prev').addEventListener('click', function(event) {
+          document.querySelector('.podporuji-nas-carousel-control-prev').addEventListener('click', function (event) {
             event.preventDefault();
             updateCarousel(currentIndex - 1);
           });
 
-          document.querySelector('.podporuji-nas-carousel-control-next').addEventListener('click', function(event) {
+          document.querySelector('.podporuji-nas-carousel-control-next').addEventListener('click', function (event) {
             event.preventDefault();
             updateCarousel(currentIndex + 1);
           });
 
           // Update the carousel when the window is resized
-          window.addEventListener('resize', function() {
+          window.addEventListener('resize', function () {
             itemWidth = carousel.offsetWidth / visibleItems;
             updateCarousel(currentIndex); // Adjust to the new dimensions
           });
@@ -970,6 +983,37 @@
       </script>
     </section>
 
+  </div>
+  <div>
+    <div>
+      <div class="footer">
+        <div class="rounded-box">
+
+          <div class="footer-img">
+            <img src="public/figma-web3-1@2x.png" alt="Your Image Description">
+          </div>
+          <div class="left-text">
+            <strong>Kontakt</strong><br /><br />
+            +420 739 360 498 <br /><br />
+            usmev@usmevnejenprokrystofa.cz<br /><br />
+            Svornosti 914/29 <br />
+            150 00 Praha 5<br />
+          </div>
+
+          <div class="rings-container1">
+            <div class="ring"><a href="url1"><img src="/public/figma web 2.png" alt="Icon 1"></a></div>
+            <div class="ring"><a href="url2"><img src="/public/figma web 3.png" alt="Icon 2"></a></div>
+            <div class="ring"><a href="url3"><img src="/public/figma web 6.png" alt="Icon 3"></a></div>
+            <div class="ring"><a href="url4"><img src="/public/figma web 5.png" alt="Icon 4"></a></div>
+          </div>
+
+          <div class="middle-text-footer">
+            © Úsměv nejen pro Kryštofa 2023. All rights reserved.
+          </div>
+          <div class ="EndMargin"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
